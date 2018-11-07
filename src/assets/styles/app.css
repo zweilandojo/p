@@ -43,6 +43,9 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+}
+
+body {
   color: #333;
   font-weight: 300;
   /* font-family: 'SofiaProSoftRegular'; */
@@ -51,6 +54,7 @@ html, body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 0.9rem;
   line-height: 1.5;
 }
 
@@ -63,6 +67,10 @@ a {
 }
 
 /* Typography */
+ol, ul, dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-family: inherit;
@@ -77,10 +85,14 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+dt {
+    font-weight: 700;
+}
 .lead {
   font-size: 1.125rem;
   font-weight: 300;
 }
+
 
 /* Icons */
 .fa {
@@ -160,6 +172,7 @@ button, select {
   background-color: #efe8e0;
 }
 
+
 /* Admin Layout */
 .Admin {
   display: flex;
@@ -167,7 +180,15 @@ button, select {
   height: 100vh;
   background-color: #f8f9fa;
 }
+.Admin-content {
+  display: flex;
+  flex-shrink: 1;
+  flex-grow: 1;
+  padding: 0 20px;
+}
 
+
+/* Global App Header */
 .Header {
   background-color: #0b1f2c;
   flex-shrink: 0;

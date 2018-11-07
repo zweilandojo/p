@@ -5,16 +5,12 @@ import { Link } from 'react-router-dom'
 // Assets
 import ojoLogo from '../../assets/img/ojo-logo.png';
 
-const AppHeader = () => (
+const AdminAppHeader = () => (
   <div className="Header navbar">
     <Link to="/" className="Header-logo">
       <img src={ojoLogo} alt="ojo labs logo" />
     </Link>
     <ul className="Header-right">
-      <li>
-        {/* <Link to="#/admin/dashboards/activity">Activity</Link> */}
-        <Link to="/admin-dashboards">Activity</Link>
-      </li>
       <li className="img-circle Header-profile">
         {/* <FontAwesomeIcon icon="coffee" /> */}
       </li>
@@ -25,4 +21,4 @@ const AppHeader = () => (
   </div>
 )
 
-export default AppHeader;
+export default AdminAppHeader;
