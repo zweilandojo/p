@@ -7,6 +7,10 @@ import TaskLoading from './components/TaskLoading/index.js'
 
 // Scenes
 import AdminDashboards from './scenes/Admin/Dashboards/index.js'
+import AdminCustomers from './scenes/Admin/Customers/index.js'
+import AdminCustomersDetail from './scenes/Admin/Customers/CustomerDetail/index.js'
+import AdminAgents from './scenes/Admin/Agents/index.js'
+import AdminBrokerages from './scenes/Admin/Brokerages/index.js'
 
 class Loading extends React.Component {
   render() {
@@ -25,7 +29,11 @@ class App extends Component {
       <Router>
         <div>
           <Route exact path="/" component={Loading}/>
-          <Route exact path="/admin-dashboards" component={AdminDashboards}/>
+          <Route exact path="/admin" component={AdminDashboards}/>
+          <Route exact path="/admin-customers" component={AdminCustomers}/>
+          <Route exact path="/admin-customers-detail" component={AdminCustomersDetail}/>
+          <Route exact path="/admin-agents" component={AdminAgents}/>
+          <Route exact path="/admin-brokerages" component={AdminBrokerages}/>
         </div>
       </Router>
     );

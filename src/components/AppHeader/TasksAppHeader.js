@@ -13,7 +13,7 @@ const TasksAppHeader = () => (
     <ul className="Header-right">
       <li>
         {/* <Link to="#/admin/dashboards/activity">Activity</Link> */}
-        <Link to="/admin-dashboards">Activity</Link>
+        <Link to="/admin">Activity</Link>
       </li>
       <li className="img-circle Header-profile">
         {/* <FontAwesomeIcon icon="coffee" /> */}
