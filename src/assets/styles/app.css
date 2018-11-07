@@ -1,0 +1,274 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffd741;
+  --green: #00C853;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #269dc5;
+  --secondary: #6c757d;
+  --success: #00C853;
+  --info: #17a2b8;
+  --warning: #ffd741;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: #333;
+  font-weight: 300;
+  /* font-family: 'SofiaProSoftRegular'; */
+  font-family: 'SofiaProSoftRegular', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+/* Links */
+a {
+  color: #269dc5;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+h1, .h1 {
+  font-size: 2.25rem;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.lead {
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+/* Icons */
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Buttons */
+button {
+  border-radius: 0;
+}
+input, button, select, optgroup, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+button, input {
+  overflow: visible;
+}
+button, select {
+  text-transform: none;
+}
+.RoundButton {
+  border-radius: 100px;
+  /* font-family: SofiaProSoftLight; */
+  font-weight: 500;
+  font-size: 20px;
+  background-color: white;
+  border: 1px solid #269dc5;
+  padding: 0.25em 1.3em 0.2em 1.3em;
+  text-align: left;
+}
+.RoundButton-primary {
+  background-color: #269dc5;
+  color: white;
+}
+.RoundButton-primary {
+  background: #269dc5;
+  border-color: #269dc5;
+  color: #FFFFFF;
+}
+
+/* Links */
+.LinkButton {
+  padding: 0;
+  border: none;
+  background: none;
+  color: #269dc5;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Navbar */
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  min-height: 50px;
+  margin-bottom: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+/* Tasks Layout */
+.Tasks-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #efe8e0;
+}
+
+/* Admin Layout */
+.Admin {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.Header {
+  background-color: #0b1f2c;
+  flex-shrink: 0;
+  height: 50px;
+}
+
+.Header-left {
+  display: flex;
+  align-items: center;
+}
+
+.Header-logo {
+  font-size: 18px;
+  line-height: 20px;
+  height: 50px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.Header-logo img {
+  max-width: 60%;
+}
+
+.Header-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.Header-profile {
+  width: 28px;
+  height: 28px;
+  font-size: 22px;
+  color: white;
+  background-color: grey;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Header ul {
+  list-style-type: none;
+}
+.Header-right li {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Components */
+.Card {
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px #ccc;
+  border-radius: 20px;
+  color: #333;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.Card-content {
+  padding: 35px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.Card-footer {
+  border-top: 1px solid whitesmoke;
+  padding: 0 20px 12px 20px;
+  align-items: center;
+  display: flex;
+  background-color: whitesmoke;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+.Card-footer button {
+  margin-top: 20px;
+}
+.Card-footer.Card-actions {
+    justify-content: flex-start;
+}
+.Card-footer.Card-actions > button {
+  margin-right: 20px;
+}
+
+/* Page Specific */
+
+/* Loading */
+.TaskLoading {
+  padding: 50px 0;
+  flex-grow: 0;
+}
+.TaskLoading-card {
+  width: 700px;
+  margin: 0 auto;
+}
+.TaskLoading-header {
+  margin-top: 0;
+  text-align: center;
+}
