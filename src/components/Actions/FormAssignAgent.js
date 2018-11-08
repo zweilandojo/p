@@ -17,9 +17,10 @@ const FormAssignAgent = () => (
         <option>Agent Name</option>
         <option>Agent Name</option>
       </select>
+      <p className="text-sm text-grey-dark mt-4 mb-1">If the brokerage is part of our Agent Matching process, you can assign their agents directly to customers. This will inform Realogy that the agent was assigned in the OJO system.</p>
       </div>
     </div>
-    <p className="text-sm">If the brokerage is part of our AgentMatching process, you can assign their agents directly to customers. This will inform Realogy that the agent was assigned in the OJO system.</p>
+
   </form>
 )
 

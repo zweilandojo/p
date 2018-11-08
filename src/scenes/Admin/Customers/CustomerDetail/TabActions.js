@@ -1,5 +1,7 @@
 import React from 'react'
 import { } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 // Components
 import FormEditBasicPrefs from "../../../../components/Actions/FormEditBasicPrefs.js"
@@ -10,11 +12,11 @@ import FormManageSubscription from "../../../../components/Actions/FormManageSub
 
 const TabActions = () => (
   <div className="overflow-y-auto">
-    <div className="flex-no-shrink">
-      <div className="JsonView">
+    <div className="flex-no-shrink row">
+      <div className="JsonView col-sm-9">
 
         {/* Action: Send Mission */}
-        <div className="card mb-8">
+        <div className="card mb-8" id="FormSendMission">
           <h5 className="card-header">Send Mission</h5>
           <div className="card-body">
             <FormSendMission />
@@ -24,7 +26,7 @@ const TabActions = () => (
         </div>
 
         {/* Action: Send Link */}
-        <div className="card mb-8">
+        <div className="card mb-8" id="FormSendLink">
           <h5 className="card-header">Send Link</h5>
           <div className="card-body">
             <FormSendLink />
@@ -34,7 +36,7 @@ const TabActions = () => (
         </div>
 
         {/* Action: Edit Basic Preferences */}
-        <div className="card mb-8">
+        <div className="card mb-8" id="FormEditBasicPrefs">
           <h5 className="card-header">Edit Basic Preferences</h5>
           <div className="card-body">
             <FormEditBasicPrefs />
@@ -44,7 +46,7 @@ const TabActions = () => (
         </div>
 
         {/* Action: Edit Area Search */}
-        <div className="card mb-8">
+        <div className="card mb-8" id="FormEditAreaSearch">
           <h5 className="card-header">Edit Area Search</h5>
           <div className="card-body">
 
@@ -52,7 +54,7 @@ const TabActions = () => (
         </div>
 
         {/* Action: Assign Agent */}
-        <div className="card mb-8">
+        <div className="card mb-8" id="FormAssignAgent">
           <h5 className="card-header">Assign Agent</h5>
           <div className="card-body">
             <FormAssignAgent />
@@ -61,26 +63,53 @@ const TabActions = () => (
           </div>
         </div>
 
+        {/* Action: Spam / Toxic user */}
+        <div className="card mb-8" id="FormSpamUser">
+          <h5 className="card-header">Spam / Toxic User</h5>
+          <div className="card-body">
+            <p>Mark this customer as spam / toxic.</p>
+            <p>This will unsubscribe them and prevent future messages from generating classification tasks for AITs.</p>
+            <hr/>
+            <button type="submit" className="btn btn-danger">Block User</button>
+          </div>
+        </div>
+
         {/* Action: Manage Subscription */}
-        <div className="card mb-8">
+        <div className="card mb-8" id="FormManageSubscription">
           <h5 className="card-header">Manage Subscription</h5>
           <div className="card-body">
             <FormManageSubscription />
             <hr/>
-            <button type="submit" className="btn btn-danger">Assign Agent</button>
+            <button type="submit" className="btn btn-danger">Unsubscribe</button>
           </div>
         </div>
 
-        {/* Action: Spam / Toxic user */}
-        <div className="card mb-8">
-          <h5 className="card-header">Spam / Toxic User</h5>
-          <div className="card-body">
-            <p>Mark this customer as spam / toxic. This will unsubscribe them and prevent future messages from generating classification tasks for AITs.</p>
-            <hr/>
-            <button type="submit" className="btn btn-danger">Assign Agent</button>
-          </div>
-        </div>
-
+      </div>
+      <div className="col-sm-3 mt-16">
+        <h5>Actions</h5>
+        <ul className="nav flex-column ml-0 text-base">
+          <li className="nav-item">
+            <Link to="#FormSendMission" className="nav-link px-0">Send Mission</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/admin-customers-detail#FormSendLink" className="nav-link px-0">Send Link</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/admin-customers-detail#FormEditBasicPrefs" className="nav-link px-0">Edit Basic Preferences</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/admin-customers-detail#FormEditAreaSearch" className="nav-link px-0">Edit Area Search</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/admin-customers-detail#FormAssignAgent" className="nav-link px-0">Assign Agent</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/admin-customers-detail#FormSpamUser" className="nav-link px-0">Spam User</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/admin-customers-detail#FormManageSubscription" className="nav-link px-0">Unsubscribe</Link>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

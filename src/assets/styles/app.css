@@ -226,6 +226,18 @@ button, select {
   background-color: #269dc5;
   border-color: #269dc5;
 }
+.btn-primary:hover {
+  color: #fff;
+  background-color: #269dc5;
+  border-color: #269dc5;
+}
+.btn-primary:active,
+.btn-primary:focus {
+  color: #fff;
+  background-color: #269dc5;
+  border-color: #269dc5;
+  box-shadow: 0;
+}
 .btn-link {
   font-weight: 400;
   color: #269dc5;
@@ -266,7 +278,7 @@ button, html [type="button"], [type="reset"], [type="submit"] {
   border-color: #269dc5;
   color: #FFFFFF;
 }
-.RoundButton .dropdown-toggle::after {
+.RoundButton.dropdown-toggle::after {
   margin-left: 0.4em;
   vertical-align: 0.15em;
 }

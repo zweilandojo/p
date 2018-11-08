@@ -9,6 +9,8 @@ import Breadcrumbs from '../../../components/Breadcrumbs/index.js'
 import ContextView from '../../../components/ContextView/index.js'
 import FormEditBasicPrefs from '../../../components/Actions/FormEditBasicPrefs.js'
 import FormSendMission from '../../../components/Actions/FormSendMission.js'
+import FormSearchMLS from '../../../components/Actions/FormSearchMLS.js'
+import FormSendHoldMsg from '../../../components/Actions/FormSendHoldMsg.js'
 
 
 class TaskDetail extends React.Component {
@@ -108,17 +110,17 @@ class TaskDetail extends React.Component {
                               Actions
                             </DropdownToggle>
                             <DropdownMenu>
-                              <DropdownItem>Send Link</DropdownItem>
+                              <DropdownItem onClick={this.toggleModal}>Send Link</DropdownItem>
                               <DropdownItem onClick={this.toggleModal}>Send Mission</DropdownItem>
-                              <DropdownItem>Send MLS Recommendation</DropdownItem>
+                              <DropdownItem onClick={this.toggleModal}>Send MLS Recommendation</DropdownItem>
                               <DropdownItem divider />
-                              <DropdownItem onClick={this.toggleModalBasicPref}>Edit Basic Preferences</DropdownItem>
-                              <DropdownItem>Edit Area Search</DropdownItem>
+                              <DropdownItem onClick={this.toggleModal}>Edit Basic Preferences</DropdownItem>
+                              <DropdownItem onClick={this.toggleModal}>Edit Area Search</DropdownItem>
                             </DropdownMenu>
                           </Dropdown>
 
                           <div className="EnhancedTextArea-ActionIcon disabled inline-block">
-                            <button type="button" className="LinkButton ">Hold on...</button>
+                            <button type="button" className="LinkButton " onClick={this.toggleModal}>Hold on...</button>
                           </div>
                         </div>
                     </div>
@@ -155,7 +157,9 @@ class TaskDetail extends React.Component {
             <ModalBody className="Card-content">
 
             {/* <FormEditBasicPrefs /> */}
-            <FormSendMission />
+            {/* <FormSendMission /> */}
+            {/* <FormSearchMLS /> */}
+            <FormSendHoldMsg />
 
             </ModalBody>
             <ModalFooter className="Card-footer Card-actions">

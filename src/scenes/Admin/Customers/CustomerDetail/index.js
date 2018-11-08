@@ -10,6 +10,7 @@ import ContextView from '../../../../components/ContextView/index.js'
 import TabProfile from './TabProfile.js'
 import TabAgent from './TabAgent.js'
 import TabActions from './TabActions.js'
+import FormSearchMLS from '../../../../components/Actions/FormSearchMLS.js'
 
 class CustomerDetail extends React.Component {
   constructor(props) {
@@ -113,60 +114,55 @@ class CustomerDetail extends React.Component {
 
                   <TabContent activeTab={this.state.activeTab}>
                     <TabPane tabId="1">
-                      <Row>
-                        <Col sm="12">
-                          <TabProfile />
-                        </Col>
-                      </Row>
+                      <Col sm="12">
+                        <TabProfile />
+                      </Col>
                     </TabPane>
                     <TabPane tabId="2">
-                      <Row>
-                        <Col sm="12">
-                          <TabAgent />
-                        </Col>
-                      </Row>
+                      <Col sm="12">
+                        <TabAgent />
+                      </Col>
                     </TabPane>
                     <TabPane tabId="3">
-                      <Row>
-                        <Col sm="12">
-                          <TabActions />
-                        </Col>
-                      </Row>
+                      <Col sm="12">
+                        <TabActions />
+                      </Col>
                     </TabPane>
                     <TabPane tabId="4">
-                      <Row>
-                        <Col sm="12">
+                      <Col sm="12">
+                        <div className="JsonView">
                           <h4>HomeFit Contents</h4>
-                        </Col>
-                      </Row>
+                        </div>
+                      </Col>
                     </TabPane>
                     <TabPane tabId="5">
-                      <Row>
-                        <Col sm="12">
+                      <Col sm="12">
+                        <div className="JsonView">
                           <h4>Event Contents</h4>
-                        </Col>
-                      </Row>
+                        </div>
+                      </Col>
                     </TabPane>
                     <TabPane tabId="6">
-                      <Row>
-                        <Col sm="12">
+                      <Col sm="12">
+                        <div className="JsonView">
                           <h4>MLS Contents</h4>
-                        </Col>
-                      </Row>
+                          <FormSearchMLS />
+                        </div>
+                      </Col>
                     </TabPane>
                     <TabPane tabId="7">
-                      <Row>
-                        <Col sm="12">
-                          <h4>Missions Contents</h4>
-                        </Col>
-                      </Row>
+                      <Col sm="12">
+                        <div className="JsonView">
+                          <h4>Missions</h4>
+                        </div>
+                      </Col>
                     </TabPane>
                     <TabPane tabId="8">
-                      <Row>
-                        <Col sm="12">
-                          <h4>Tasks Contents</h4>
-                        </Col>
-                      </Row>
+                      <Col sm="12">
+                        <div className="JsonView">
+                          <h4>Tasks</h4>
+                        </div>
+                      </Col>
                     </TabPane>
                   </TabContent>
                 </div>

@@ -30,7 +30,6 @@ const TabAgent = () => (
               </tbody>
             </table>
           </div>
-
         </div>
       </div>
     </div>
