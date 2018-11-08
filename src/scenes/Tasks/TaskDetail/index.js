@@ -8,6 +8,8 @@ import TasksAppHeader from '../../../components/AppHeader/TasksAppHeader.js'
 import Breadcrumbs from '../../../components/Breadcrumbs/index.js'
 import ContextView from '../../../components/ContextView/index.js'
 import FormEditBasicPrefs from '../../../components/Actions/FormEditBasicPrefs.js'
+import FormSendMission from '../../../components/Actions/FormSendMission.js'
+
 
 class TaskDetail extends React.Component {
   constructor(props) {
@@ -108,8 +110,8 @@ class TaskDetail extends React.Component {
                             <DropdownMenu>
                               <DropdownItem onClick={this.toggleModal}>Send Mission</DropdownItem>
                               <DropdownItem divider />
-                              <DropdownItem onClick={this.toggleModalBasicPref}>Change Basic Preferences</DropdownItem>
-                              <DropdownItem>Change Area Search</DropdownItem>
+                              <DropdownItem onClick={this.toggleModalBasicPref}>Edit Basic Preferences</DropdownItem>
+                              <DropdownItem>Edit Area Search</DropdownItem>
                               <DropdownItem divider />
                               <DropdownItem>Send MLS Recommendation</DropdownItem>
                             </DropdownMenu>
@@ -152,8 +154,8 @@ class TaskDetail extends React.Component {
             <ModalHeader toggle={this.toggleModal} close={closeBtn}>Send Mission</ModalHeader>
             <ModalBody className="Card-content">
 
-            <FormEditBasicPrefs />
-            {/* <FormSendMission /> */}
+            {/* <FormEditBasicPrefs /> */}
+            <FormSendMission />
 
             </ModalBody>
             <ModalFooter className="Card-footer Card-actions">
