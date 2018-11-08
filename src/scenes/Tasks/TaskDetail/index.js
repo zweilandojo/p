@@ -108,12 +108,12 @@ class TaskDetail extends React.Component {
                               Actions
                             </DropdownToggle>
                             <DropdownMenu>
+                              <DropdownItem>Send Link</DropdownItem>
                               <DropdownItem onClick={this.toggleModal}>Send Mission</DropdownItem>
+                              <DropdownItem>Send MLS Recommendation</DropdownItem>
                               <DropdownItem divider />
                               <DropdownItem onClick={this.toggleModalBasicPref}>Edit Basic Preferences</DropdownItem>
                               <DropdownItem>Edit Area Search</DropdownItem>
-                              <DropdownItem divider />
-                              <DropdownItem>Send MLS Recommendation</DropdownItem>
                             </DropdownMenu>
                           </Dropdown>
 

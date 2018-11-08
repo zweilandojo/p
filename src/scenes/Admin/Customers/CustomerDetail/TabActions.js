@@ -4,6 +4,7 @@ import { } from 'react-router-dom'
 // Components
 import FormEditBasicPrefs from "../../../../components/Actions/FormEditBasicPrefs.js"
 import FormSendMission from "../../../../components/Actions/FormSendMission.js"
+import FormSendLink from "../../../../components/Actions/FormSendLink.js"
 import FormAssignAgent from "../../../../components/Actions/FormAssignAgent.js"
 import FormManageSubscription from "../../../../components/Actions/FormManageSubscription.js"
 
@@ -11,6 +12,7 @@ const TabActions = () => (
   <div className="overflow-y-auto">
     <div className="flex-no-shrink">
       <div className="JsonView">
+
         {/* Action: Send Mission */}
         <div className="card mb-8">
           <h5 className="card-header">Send Mission</h5>
@@ -18,6 +20,16 @@ const TabActions = () => (
             <FormSendMission />
             <hr/>
             <button type="submit" className="btn btn-primary">Send Mission</button>
+          </div>
+        </div>
+
+        {/* Action: Send Link */}
+        <div className="card mb-8">
+          <h5 className="card-header">Send Link</h5>
+          <div className="card-body">
+            <FormSendLink />
+            <hr/>
+            <button type="submit" className="btn btn-primary">Send Link</button>
           </div>
         </div>
 

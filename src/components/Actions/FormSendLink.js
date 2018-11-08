@@ -1,52 +1,40 @@
 import React from 'react';
 import { } from 'react-router-dom';
 
-const FormSendMission = () => (
+const FormSendLink = () => (
   <form className="form">
     <fieldset className="form-group">
       <div className="row">
-        <legend className="col-form-label col-sm-3 pt-0">Which Mission?</legend>
+        <legend className="col-form-label col-sm-3 pt-0">Which page?</legend>
         <div className="col-sm-9">
           <div className="form-check">
             <label className="form-check-label" labelFor="gridCheck1">
               <input className="form-check-input" name="mission" type="radio" id="gridCheck1" />
-              Versus
+              Discover (/discovery)
             </label>
           </div>
           <div className="form-check">
             <label className="form-check-label" labelFor="gridCheck1">
               <input className="form-check-input" name="mission" type="radio" id="gridCheck1" />
-              Tour OJO
+              Favorites (/favorites/list)
             </label>
           </div>
           <div className="form-check">
             <label className="form-check-label" labelFor="gridCheck1">
               <input className="form-check-input" name="mission" type="radio" id="gridCheck1" />
-              Basic Preferences
+              HomeFit List (/homefit/overall)
             </label>
           </div>
           <div className="form-check">
             <label className="form-check-label" labelFor="gridCheck1">
               <input className="form-check-input" name="mission" type="radio" id="gridCheck1" />
-              Area Search
+              Kitchen Style List (/homefit/styles/kitchen)
             </label>
           </div>
           <div className="form-check">
             <label className="form-check-label" labelFor="gridCheck1">
               <input className="form-check-input" name="mission" type="radio" id="gridCheck1" />
-              Kitchen Style
-            </label>
-          </div>
-          <div className="form-check">
-            <label className="form-check-label" labelFor="gridCheck1">
-              <input className="form-check-input" name="mission" type="radio" id="gridCheck1" />
-              Commute Search
-            </label>
-          </div>
-          <div className="form-check">
-            <label className="form-check-label" labelFor="gridCheck1">
-              <input className="form-check-input" name="mission" type="radio" id="gridCheck1" />
-              Agent Request
+              Preferred Commute List (/homefit/preferred-commute)
             </label>
           </div>
           <div className="form-check">
@@ -68,4 +56,4 @@ const FormSendMission = () => (
   </form>
 )
 
-export default FormSendMission;
+export default FormSendLink;

@@ -56,10 +56,12 @@ class ContextMissions extends React.Component {
         </div>
         <div className="ContextView-factgroup">
           <h4>Basic Preferences</h4>
+          {/*
           <div className="ContextView-fact">
             <span>Wants to live</span>
             <span>Miami, FL <span className="text-grey">(fl_ramb)</span></span>
           </div>
+          */}
           <div className="ContextView-fact">
             <span>Home type</span>
             <span>Homes, Condos</span>
@@ -79,9 +81,14 @@ class ContextMissions extends React.Component {
         </div>
         <div className="ContextView-factgroup">
           <h4>Area Search</h4>
-          <div className="ContextView-fact">
-            <span>Areas</span>
-            <span>78702, Hyde Park, East Cesar Chavez, South Central, 78721, Central East Side, Downtown</span>
+          <div className="ContextView-fact ContextView-fact-full">
+            <span>78702, Austin, TX</span>
+            <span>Hyde Park, Austin, TX</span>
+            <span>East Cesar Chavez, Austin, TX</span>
+            <span>South Central, Austin, TX</span>
+            <span>78721, Austin, TX</span>
+            <span>Central East Side, Austin, TX</span>
+            <span>Downtown, Austin, TX</span>
           </div>
         </div>
         <div className="ContextView-factgroup">
@@ -148,15 +155,29 @@ class ContextMissions extends React.Component {
         <div className="ContextView-factgroup">
           <h4>Agent Request</h4>
           <div className="ContextView-fact">
-            <span>Needs agent</span>
-            <span>No</span>
+            <span>Comm prefs</span>
+            <span>Text</span>
           </div>
-        </div>
-        <div className="ContextView-factgroup">
-          <h4>Mortgage Handoff</h4>
           <div className="ContextView-fact">
-            <span>Lender</span>
-            <span>Will need</span>
+            <span>Buying/Selling</span>
+            <span>Buying</span>
+          </div>
+          <div className="ContextView-fact">
+            <span>Buy Timeline</span>
+            <span>Less than 3 months</span>
+          </div>
+
+          <div className="ContextView-fact">
+            <span>Sell Timeline</span>
+            <span>Less than 3 months</span>
+          </div>
+          <div className="ContextView-fact">
+            <span>Financing</span>
+            <span>I need financing</span>
+          </div>
+          <div className="ContextView-fact">
+            <span>Message</span>
+            <span>This is the message the user sent when they requested an agent.</span>
           </div>
         </div>
       </div>
