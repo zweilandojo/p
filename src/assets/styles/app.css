@@ -207,25 +207,6 @@ button, input {
 button, select {
   text-transform: none;
 }
-.RoundButton {
-  border-radius: 100px;
-  /* font-family: SofiaProSoftLight; */
-  font-weight: 500;
-  font-size: 20px;
-  background-color: white;
-  border: 1px solid #269dc5;
-  padding: 0.25em 1.3em 0.2em 1.3em;
-  text-align: left;
-}
-.RoundButton-primary {
-  background-color: #269dc5;
-  color: white;
-}
-.RoundButton-primary {
-  background: #269dc5;
-  border-color: #269dc5;
-  color: #FFFFFF;
-}
 .btn {
   display: inline-block;
   font-weight: 400;
@@ -268,6 +249,55 @@ button, html [type="button"], [type="reset"], [type="submit"] {
 .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+.RoundButton {
+  border-radius: 100px;
+  /* font-family: SofiaProSoftLight; */
+  font-weight: 500;
+  font-size: 20px;
+  background-color: white;
+  border: 1px solid #269dc5;
+  padding: 0.25em 1.3em 0.2em 1.3em;
+  text-align: left;
+  color: #269dc5;
+}
+.RoundButton-primary {
+  background: #269dc5;
+  border-color: #269dc5;
+  color: #FFFFFF;
+}
+.RoundButton .dropdown-toggle::after {
+  margin-left: 0.4em;
+  vertical-align: 0.15em;
+}
+.RoundButton:hover {
+  color: #269DC5;
+  background-color: #E9F5F9;
+  border-color: #269dc5;
+}
+.RoundButton:not(:disabled):not(.disabled):active,
+.RoundButton-secondary:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #269DC5;
+  border-color: #269DC5;
+}
+.show > .btn-secondary.dropdown-toggle:focus,
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.btn-secondary:not(:disabled):not(.disabled).active:focus {
+  color: #fff;
+  background-color: #269DC5;
+  border-color: #269DC5;
+  box-shadow: 0 0 0 0.2rem rgba(38, 157, 197, 0.5)
+}
+
+.RoundButton:focus,
+.RoundButton:active
+.RoundButton-secondary:active,
+.RoundButton-secondary:focus {
+  outline: none;
+  color: #269DC5;
+  background-color: #E9F5F9;
+  box-shadow: 0 0 0 0.2rem rgba(38, 157, 197, 0.5)
 }
 
 
@@ -379,8 +409,9 @@ textarea {
   pointer-events: auto;
   background-color: none;
   background-clip: padding-box;
-  border: 0px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.3rem;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
   outline: 0;
 }
 

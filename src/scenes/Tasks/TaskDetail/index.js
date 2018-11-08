@@ -15,11 +15,11 @@ class TaskDetail extends React.Component {
 
     this.state = {
       dropdownOpen: false,
-      modal: false
+      modal: false,
+      modalBasicPref: false
     };
     this.toggle = this.toggle.bind(this);
     this.toggleModal = this.toggleModal.bind(this);
-    this.toggleModalBasicPref = this.toggleModalBasicPref.bind(this);
   }
 
   toggle() {
@@ -28,11 +28,6 @@ class TaskDetail extends React.Component {
     }));
   }
   toggleModal() {
-    this.setState(prevState => ({
-      modal: !prevState.modal
-    }));
-  }
-  toggleModalBasicPref() {
     this.setState(prevState => ({
       modal: !prevState.modal
     }));
@@ -107,7 +102,7 @@ class TaskDetail extends React.Component {
                             toggle={this.toggle}
                             className="inline-block mr-4"
                           >
-                            <DropdownToggle caret className="btn btn-primary">
+                            <DropdownToggle caret className="RoundButton RoundButton-secondary">
                               Actions
                             </DropdownToggle>
                             <DropdownMenu>
@@ -156,20 +151,129 @@ class TaskDetail extends React.Component {
           <div className="Card">
             <ModalHeader toggle={this.toggleModal} close={closeBtn}>Send Mission</ModalHeader>
             <ModalBody className="Card-content">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+            <form>
+              <fieldset className="form-group">
+                <div className="row">
+                  <legend className="col-form-label col-sm-3 pt-0">Home Type</legend>
+                  <div className="col-sm-9">
+                    <div className="form-check">
+                      <input className="form-check-input" type="checkbox" id="gridCheck1" />
+                      <label className="form-check-label" labelFor="gridCheck1">
+                        Homes
+                      </label>
+                    </div>
+                    <div className="form-check">
+                      <input className="form-check-input" type="checkbox" id="gridCheck1" />
+                      <label className="form-check-label" labelFor="gridCheck1">
+                        Townhomes
+                      </label>
+                    </div>
+                    <div className="form-check">
+                      <input className="form-check-input" type="checkbox" id="gridCheck1" />
+                      <label className="form-check-label" labelFor="gridCheck1">
+                        Condos
+                      </label>
+                    </div>
+                    <div className="form-check">
+                      <input className="form-check-input" type="checkbox" id="gridCheck1" />
+                      <label className="form-check-label" labelFor="gridCheck1">
+                        Other
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <div className="form-group row">
+                <label className="col-sm-3 col-form-label">Price Max</label>
+                <div className="col-sm-9">
+                  <select type="select" className="form-control" name="select" id="priceMin">
+                    <option>None</option>
+                    <option>$100,000</option>
+                    <option>$200,000</option>
+                    <option>$250,000</option>
+                    <option>$300,000</option>
+                    <option>$350,000</option>
+                    <option>$400,000</option>
+                    <option>$450,000</option>
+                    <option>$500,000</option>
+                    <option>$550,000</option>
+                    <option>$600,000</option>
+                    <option>$650,000</option>
+                    <option>$700,000</option>
+                    <option>$750,000</option>
+                    <option>$800,000</option>
+                    <option>$850,000</option>
+                  </select>
+                </div>
+              </div>
+
+              <div className="form-group row">
+                <label className="col-sm-3 col-form-label">Price Max</label>
+                <div className="col-sm-9">
+                  <select type="select" className="form-control" name="select" id="priceMax">
+                    <option>None</option>
+                    <option>$250,000</option>
+                    <option>$300,000</option>
+                    <option>$350,000</option>
+                    <option>$400,000</option>
+                    <option>$450,000</option>
+                    <option>$500,000</option>
+                    <option>$550,000</option>
+                    <option>$600,000</option>
+                    <option>$650,000</option>
+                    <option>$700,000</option>
+                    <option>$750,000</option>
+                    <option>$800,000</option>
+                    <option>$850,000</option>
+                    <option>$900,000</option>
+                    <option>$950,000</option>
+                    <option>$1,000,000</option>
+                    <option>$1,250,000</option>
+                    <option>$1,500,000</option>
+                    <option>$1,750,000</option>
+                    <option>$2,000,000</option>
+                    <option>None</option>
+                  </select>
+                </div>
+              </div>
+
+              <div className="form-group row">
+                <label labelFor="inputEmail3" className="col-sm-3 col-form-label">Bed</label>
+                <div className="col-sm-9">
+                  <input type="number" className="form-control" id="inputEmail3" placeholder="1" />
+                </div>
+              </div>
+
+              <div className="form-group row">
+                <label labelFor="inputPassword3" className="col-sm-3 col-form-label">Bath</label>
+                <div className="col-sm-9">
+                  <input type="number" className="form-control" id="inputPassword3" placeholder="1" />
+                </div>
+              </div>
+            </form>
+
+
             </ModalBody>
             <ModalFooter className="Card-footer Card-actions">
-              <Button color="primary" onClick={this.toggleModal}>Do Something</Button>{' '}
-              <Button color="secondary" onClick={this.toggleModal}>Cancel</Button>
+              <button className="RoundButton RoundButton-primary" onClick={this.toggleModal}>Save changes</button>
+              <button className="LinkButton" onClick={this.toggleModal}>Cancel</button>
             </ModalFooter>
           </div>
         </Modal>
 
-        <Modal isOpen={this.state.modal} toggle={this.toggleModalBasicPref} className={this.props.className}>
+{/*
+        <Modal
+          isOpen={this.state.modal}
+          toggle={this.toggleModalBasicPref}
+          modalClassName={this.props.className}
+          centered="true"
+        >
           <div className="Card">
             <ModalHeader toggle={this.toggleModalBasicPref} close={closeBtn}>Update Basic Preferences</ModalHeader>
             <ModalBody className="Card-content">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
             </ModalBody>
             <ModalFooter className="Card-footer Card-actions">
               <Button className="RoundButton" onClick={this.toggleModalBasicPref}>Save</Button>{' '}
@@ -177,6 +281,7 @@ class TaskDetail extends React.Component {
             </ModalFooter>
           </div>
         </Modal>
+        */}
 
       </div>
     )
