@@ -62,7 +62,7 @@ class ContextMissions extends React.Component {
           </div>
           <div className="ContextView-fact">
             <span>MLS</span>
-            <span>Orlando, FL <span className="text-grey">(fl_ramb)</span></span>
+            <span>Miami, FL <span className="text-grey">(fl_ramb)</span></span>
           </div>
           <div className="ContextView-fact">
             <span>Price</span>
