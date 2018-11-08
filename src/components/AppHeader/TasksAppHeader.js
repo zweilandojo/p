@@ -16,7 +16,7 @@ const TasksAppHeader = () => (
         <Link to="/admin">Activity</Link>
       </li>
       <li className="img-circle Header-profile">
-        {/* <FontAwesomeIcon icon="coffee" /> */}
+        <i className="fa fa-user"></i>
       </li>
       <li>
         <button type="button" className="LinkButton">Logout</button>

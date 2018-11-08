@@ -12,7 +12,7 @@ const AdminAppHeader = () => (
     </Link>
     <ul className="Header-right">
       <li className="img-circle Header-profile">
-        {/* <FontAwesomeIcon icon="coffee" /> */}
+        <i className="fa fa-user"></i>
       </li>
       <li>
         <button type="button" className="LinkButton">Logout</button>
