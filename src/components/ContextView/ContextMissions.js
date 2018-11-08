@@ -82,13 +82,13 @@ class ContextMissions extends React.Component {
         <div className="ContextView-factgroup">
           <h4>Area Search</h4>
           <div className="ContextView-fact ContextView-fact-full">
-            <span>78702, Austin, TX</span>
-            <span>Hyde Park, Austin, TX</span>
-            <span>East Cesar Chavez, Austin, TX</span>
-            <span>South Central, Austin, TX</span>
-            <span>78721, Austin, TX</span>
-            <span>Central East Side, Austin, TX</span>
-            <span>Downtown, Austin, TX</span>
+            <span><i className="fa fa-map-marker text-grey-dark"></i> 78702, Austin, TX</span>
+            <span><i className="fa fa-map-marker text-grey-dark"></i> Hyde Park, Austin, TX</span>
+            <span><i className="fa fa-map-marker text-grey-dark"></i> East Cesar Chavez, Austin, TX</span>
+            <span><i className="fa fa-map-marker text-grey-dark"></i> South Central, Austin, TX</span>
+            <span><i className="fa fa-map-marker text-grey-dark"></i> 78721, Austin, TX</span>
+            <span><i className="fa fa-map-marker text-grey-dark"></i> Central East Side, Austin, TX</span>
+            <span><i className="fa fa-map-marker text-grey-dark"></i> Downtown, Austin, TX</span>
           </div>
         </div>
         <div className="ContextView-factgroup">
