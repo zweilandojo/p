@@ -4,6 +4,8 @@ import { } from 'react-router-dom'
 // Components
 import FormEditBasicPrefs from "../../../../components/Actions/FormEditBasicPrefs.js"
 import FormSendMission from "../../../../components/Actions/FormSendMission.js"
+import FormAssignAgent from "../../../../components/Actions/FormAssignAgent.js"
+import FormManageSubscription from "../../../../components/Actions/FormManageSubscription.js"
 
 const TabActions = () => (
   <div className="overflow-y-auto">
@@ -41,37 +43,29 @@ const TabActions = () => (
         <div className="card mb-8">
           <h5 className="card-header">Assign Agent</h5>
           <div className="card-body">
-            <p>If the brokerage is part of our AgentMatching process, you can assign their agents directly to customers. This will inform Realogy that the agent was assigned in the OJO system.</p>
-            <form>
-              <div>
-                <div class="form-group row">
-                  <label for="agent" class="col-sm-3 col-form-label">Select new agent</label>
-                  <div class="col-sm-9">
-                    <select class="form-control" disabled="">
-                      <option value="">Customer’s brokerage is not part of Agent Matching</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-sm-10">
-                  <button type="button" class="btn btn-primary" disabled="">Assign to agent</button>
-                </div>
-              </div>
-            </form>
+            <FormAssignAgent />
+            <hr/>
+            <button type="submit" className="btn btn-primary">Assign Agent</button>
           </div>
         </div>
 
         {/* Action: Manage Subscription */}
         <div className="card mb-8">
-          <h5 className="card-header">Assign Agent</h5>
+          <h5 className="card-header">Manage Subscription</h5>
           <div className="card-body">
+            <FormManageSubscription />
+            <hr/>
+            <button type="submit" className="btn btn-danger">Assign Agent</button>
           </div>
         </div>
+
         {/* Action: Spam / Toxic user */}
         <div className="card mb-8">
-          <h5 className="card-header">Assign Agent</h5>
+          <h5 className="card-header">Spam / Toxic User</h5>
           <div className="card-body">
+            <p>Mark this customer as spam / toxic. This will unsubscribe them and prevent future messages from generating classification tasks for AITs.</p>
+            <hr/>
+            <button type="submit" className="btn btn-danger">Assign Agent</button>
           </div>
         </div>
 

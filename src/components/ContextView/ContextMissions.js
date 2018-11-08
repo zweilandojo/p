@@ -76,10 +76,6 @@ class ContextMissions extends React.Component {
             <span>Baths</span>
             <span>1+</span>
           </div>
-          <div className="ContextView-fact">
-            <span>Listing status</span>
-            <span>Active ???</span>
-          </div>
         </div>
         <div className="ContextView-factgroup">
           <h4>Area Search</h4>
