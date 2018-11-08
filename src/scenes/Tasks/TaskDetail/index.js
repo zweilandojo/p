@@ -19,6 +19,7 @@ class TaskDetail extends React.Component {
     };
     this.toggle = this.toggle.bind(this);
     this.toggleModal = this.toggleModal.bind(this);
+    this.toggleModalBasicPref = this.toggleModalBasicPref.bind(this);
   }
 
   toggle() {
@@ -27,6 +28,11 @@ class TaskDetail extends React.Component {
     }));
   }
   toggleModal() {
+    this.setState(prevState => ({
+      modal: !prevState.modal
+    }));
+  }
+  toggleModalBasicPref() {
     this.setState(prevState => ({
       modal: !prevState.modal
     }));
@@ -107,7 +113,7 @@ class TaskDetail extends React.Component {
                             <DropdownMenu>
                               <DropdownItem onClick={this.toggleModal}>Send Mission</DropdownItem>
                               <DropdownItem divider />
-                              <DropdownItem>Change Basic Preferences</DropdownItem>
+                              <DropdownItem onClick={this.toggleModalBasicPref}>Change Basic Preferences</DropdownItem>
                               <DropdownItem>Change Area Search</DropdownItem>
                               <DropdownItem divider />
                               <DropdownItem>Send MLS Recommendation</DropdownItem>
@@ -151,13 +157,23 @@ class TaskDetail extends React.Component {
             <ModalHeader toggle={this.toggleModal} close={closeBtn}>Send Mission</ModalHeader>
             <ModalBody className="Card-content">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-
-
             </ModalBody>
             <ModalFooter className="Card-footer Card-actions">
               <Button color="primary" onClick={this.toggleModal}>Do Something</Button>{' '}
               <Button color="secondary" onClick={this.toggleModal}>Cancel</Button>
+            </ModalFooter>
+          </div>
+        </Modal>
+
+        <Modal isOpen={this.state.modal} toggle={this.toggleModalBasicPref} className={this.props.className}>
+          <div className="Card">
+            <ModalHeader toggle={this.toggleModalBasicPref} close={closeBtn}>Update Basic Preferences</ModalHeader>
+            <ModalBody className="Card-content">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </ModalBody>
+            <ModalFooter className="Card-footer Card-actions">
+              <Button className="RoundButton" onClick={this.toggleModalBasicPref}>Save</Button>{' '}
+              <Button className="LinkButton" onClick={this.toggleModalBasicPref}>Cancel</Button>
             </ModalFooter>
           </div>
         </Modal>

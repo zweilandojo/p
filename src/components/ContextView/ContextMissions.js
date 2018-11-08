@@ -57,12 +57,12 @@ class ContextMissions extends React.Component {
         <div className="ContextView-factgroup">
           <h4>Basic Preferences</h4>
           <div className="ContextView-fact">
-            <span>Property Type</span>
-            <span>Homes, Condos</span>
+            <span>Wants to live</span>
+            <span>Miami, FL <span className="text-grey">(fl_ramb)</span></span>
           </div>
           <div className="ContextView-fact">
-            <span>MLS</span>
-            <span>Miami, FL <span className="text-grey">(fl_ramb)</span></span>
+            <span>Property type</span>
+            <span>Homes, Condos</span>
           </div>
           <div className="ContextView-fact">
             <span>Price</span>
@@ -77,7 +77,7 @@ class ContextMissions extends React.Component {
             <span>1+</span>
           </div>
           <div className="ContextView-fact">
-            <span>Listing Status</span>
+            <span>Listing status</span>
             <span>Active ???</span>
           </div>
         </div>
