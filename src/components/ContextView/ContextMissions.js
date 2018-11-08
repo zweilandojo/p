@@ -136,6 +136,20 @@ class ContextMissions extends React.Component {
           </div>
         </div>
         <div className="ContextView-factgroup">
+          <h4>Kitchen Style</h4>
+          <div className="ContextView-fact">
+            <span>Property</span>
+            <span>Attributes</span>
+          </div>
+        </div>
+        <div className="ContextView-factgroup">
+          <h4>Commute Search</h4>
+          <div className="ContextView-fact">
+            <span>Property</span>
+            <span>Attributes</span>
+          </div>
+        </div>
+        <div className="ContextView-factgroup">
           <h4>Agent Request</h4>
           <div className="ContextView-fact">
             <span>Needs agent</span>
