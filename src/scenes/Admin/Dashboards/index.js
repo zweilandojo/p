@@ -23,6 +23,7 @@ const AdminDashboards = () => (
                 <li><a href="/admin-customers">Customers</a></li>
                 <li><a href="/admin-agents">Agents</a></li>
                 <li><a href="/admin-brokerages">Brokerages</a></li>
+                <li><a href="/admin-users">Users</a></li>
               </ul>
             </dd>
             <dt>Tasks System</dt>

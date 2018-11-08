@@ -713,9 +713,9 @@ textarea {
 }
 .ContextView-fact {
     display: flex;
-    flex-direction: column;
-    width: 141px;
-    padding: 5px 5px 5px 10px;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 5px 0 10px;
     word-wrap: break-word;
 }
 .ContextView-fact > span {
@@ -723,6 +723,8 @@ textarea {
 }
 .ContextView-fact > span:first-child {
     font-family: SofiaProSoftMedium;
+    width: 37.5%;
+    flex-shrink: 0;
 }
 
 

@@ -22,10 +22,22 @@ class ContextMissions extends React.Component {
         <div class="ContextView-factgroup">
           <h4>Mission Status</h4>
           <div class="ContextView-table">
-            <ul className="list-reset p-2">
+            <ul className="list-reset px-2 mb-0">
               <li>
                 <i class="fa fa-check-circle mr-1" aria-hidden="true" style={successColor}></i>
                 Versus
+              </li>
+              <li>
+                <i class="fa fa-check-circle mr-1" aria-hidden="true" style={successColor}></i>
+                Basic Prefs
+              </li>
+              <li>
+                <i class="fa fa-check-circle mr-1" aria-hidden="true" style={successColor}></i>
+                Area Search
+              </li>
+              <li>
+                <i class="fa fa-times-circle mr-1" aria-hidden="true" style={errorColor}></i>
+                Kitchen Style
               </li>
               <li>
                 <i class="fa fa-times-circle mr-1" aria-hidden="true" style={errorColor}></i>
@@ -37,101 +49,104 @@ class ContextMissions extends React.Component {
               </li>
               <li>
                 <i class="fa fa-times-circle mr-1" aria-hidden="true" style={errorColor}></i>
-                Basic Prefs
-              </li>
-              <li>
-                <i class="fa fa-times-circle mr-1" aria-hidden="true" style={errorColor}></i>
-                Area Fit
-              </li>
-              <li>
-                <i class="fa fa-times-circle mr-1" aria-hidden="true" style={errorColor}></i>
-                Kitchen Style
-              </li>
-              <li>
-                <i class="fa fa-times-circle mr-1" aria-hidden="true" style={errorColor}></i>
                 Mortgage Handoff
               </li>
             </ul>
           </div>
         </div>
         <div className="ContextView-factgroup">
-          <h4>Mission Data</h4>
-          <div className="ContextView-fact">
-            <span>YardPref</span>
-            <span>YardPref.Positive</span>
-          </div>
-          <div className="ContextView-fact">
-            <span>StylePref</span>
-            <span>StylePref.Exterior</span>
-            <span>StylePref.Interior</span>
-          </div>
-          <div className="ContextView-fact">
-            <span>EatingPref</span>
-            <span>EatingPref.Out</span>
-            <span>EatingPref.Home</span>
-          </div>
-          <div className="ContextView-fact">
-            <span>LivingWith</span>
-            <span>LivingWith.Pets</span>
-          </div>
-          <div className="ContextView-fact">
-            <span>CommutePref</span>
-            <span>CommutePref.Positive</span>
-          </div>
-          <div className="ContextView-fact">
-            <span>HobbiesPref</span>
-            <span>HobbiesPref.Indoor</span>
-            <span>HobbiesPref.Outdoor</span>
-          </div>
-          <div className="ContextView-fact">
-            <span>HomeAgePref</span>
-            <span>HomeAgePref.Newer</span>
-          </div>
-          <div className="ContextView-fact">
-            <span>ParkingPref</span>
-            <span>ParkingPref.PrivateGarage</span>
-            </div>
-          <div className="ContextView-fact">
-            <span>EntertainPref</span>
-            <span>EntertainPref.Indoors</span>
-            <span>EntertainPref.Outdoors</span>
-          </div>
+          <h4>Basic Preferences</h4>
           <div className="ContextView-fact">
             <span>Property Type</span>
-            <span>Home</span>
+            <span>Homes, Condos</span>
           </div>
           <div className="ContextView-fact">
-            <span>Mls Constraint</span>
-            <span>fl_ramb</span>
+            <span>MLS</span>
+            <span>Orlando, FL <span className="text-grey">(fl_ramb)</span></span>
           </div>
           <div className="ContextView-fact">
-            <span>Price Constraint</span>
-            <span>max: </span>
-            <span>min: 800000</span>
+            <span>Price</span>
+            <span>$200,000 - $400,000</span>
           </div>
           <div className="ContextView-fact">
-            <span>Bedroom Constraint</span>
-            <span>min: 2</span>
+            <span>Beds</span>
+            <span>1+</span>
           </div>
           <div className="ContextView-fact">
-            <span>TransportationPref</span>
-            <span>TransportationPref.Walk</span>
+            <span>Baths</span>
+            <span>1+</span>
           </div>
           <div className="ContextView-fact">
-            <span>Bathroom Constraint</span>
-            <span>min: 2</span>
+            <span>Listing Status</span>
+            <span>Active ???</span>
+          </div>
+        </div>
+        <div className="ContextView-factgroup">
+          <h4>Area Search</h4>
+          <div className="ContextView-fact">
+            <span>Areas</span>
+            <span>78702, Hyde Park, East Cesar Chavez, South Central, 78721, Central East Side, Downtown</span>
+          </div>
+        </div>
+        <div className="ContextView-factgroup">
+          <h4>Versus</h4>
+          <div className="ContextView-fact">
+            <span>Living with</span>
+            <span>Pets &amp; Family</span>
           </div>
           <div className="ContextView-fact">
-            <span>MortgageHandoffPref</span>
-            <span>MortgageHandoffPref.Negative</span>
+            <span>Yard</span>
+            <span>Wants a yard</span>
           </div>
           <div className="ContextView-fact">
-            <span>Photo Count Constraint</span>
-            <span>min: 1</span>
+            <span>Parking</span>
+            <span>Private Garage</span>
           </div>
           <div className="ContextView-fact">
-            <span>Listing Status Constraint</span>
-            <span>Active</span>
+            <span>Style</span>
+            <span>Exterior &amp; Interior</span>
+          </div>
+          <div className="ContextView-fact">
+            <span>Entertaining</span>
+            <span>Indoors &amp; Outdoors</span>
+          </div>
+          <div className="ContextView-fact">
+            <span>Home age</span>
+            <span>Newer</span>
+          </div>
+          <div className="ContextView-fact">
+            <span>Hobbies</span>
+            <span>Indoors &amp; Outdoors</span>
+          </div>
+          <div className="ContextView-fact">
+            <span>Eating</span>
+            <span>Eats out often</span>
+          </div>
+          <div className="ContextView-fact">
+            <span>Commute</span>
+            <span>Commutes daily</span>
+          </div>
+          <div className="ContextView-fact">
+            <span>Transport</span>
+            <span>Prefers to walk</span>
+          </div>
+          <div className="ContextView-fact">
+            <span>Financing</span>
+            <span>I need financing</span>
+          </div>
+        </div>
+        <div className="ContextView-factgroup">
+          <h4>Agent Request</h4>
+          <div className="ContextView-fact">
+            <span>Needs agent</span>
+            <span>No</span>
+          </div>
+        </div>
+        <div className="ContextView-factgroup">
+          <h4>Mortgage Handoff</h4>
+          <div className="ContextView-fact">
+            <span>Lender</span>
+            <span>Will need</span>
           </div>
         </div>
       </div>
