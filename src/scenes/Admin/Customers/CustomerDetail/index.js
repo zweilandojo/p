@@ -8,6 +8,8 @@ import AdminAppHeader from '../../../../components/AppHeader/AdminAppHeader.js'
 import Breadcrumbs2 from '../../../../components/Breadcrumbs/index2.js'
 import ContextView from '../../../../components/ContextView/index.js'
 import TabProfile from './TabProfile.js'
+import TabAgent from './TabAgent.js'
+import TabActions from './TabActions.js'
 
 class CustomerDetail extends React.Component {
   constructor(props) {
@@ -105,64 +107,70 @@ class CustomerDetail extends React.Component {
                   </NavLink>
                 </NavItem>
               </Nav>
-              <TabContent activeTab={this.state.activeTab}>
-                <TabPane tabId="1">
-                  <Row>
-                    <Col sm="12">
-                      <TabProfile />
-                    </Col>
-                  </Row>
-                </TabPane>
-                <TabPane tabId="2">
-                  <Row>
-                    <Col sm="12">
-                      <h4>Agent Contents</h4>
-                    </Col>
-                  </Row>
-                </TabPane>
-                <TabPane tabId="3">
-                  <Row>
-                    <Col sm="12">
-                      <h4>Actions Contents</h4>
-                    </Col>
-                  </Row>
-                </TabPane>
-                <TabPane tabId="4">
-                  <Row>
-                    <Col sm="12">
-                      <h4>HomeFit Contents</h4>
-                    </Col>
-                  </Row>
-                </TabPane>
-                <TabPane tabId="5">
-                  <Row>
-                    <Col sm="12">
-                      <h4>Event Contents</h4>
-                    </Col>
-                  </Row>
-                </TabPane>
-                <TabPane tabId="6">
-                  <Row>
-                    <Col sm="12">
-                      <h4>MLS Contents</h4>
-                    </Col>
-                  </Row>
-                </TabPane>
-                <TabPane tabId="7">
-                  <Row>
-                    <Col sm="12">
-                      <h4>Missions Contents</h4>
-                    </Col>
-                  </Row>
-                </TabPane>
-                <TabPane tabId="8">
-                  <Row>
-                    <Col sm="12">
-                      <h4>Tasks Contents</h4>
-                    </Col>
-                  </Row>
-                </TabPane>
-              </TabContent>
+
+              <div className="overflow-y-auto">
+                <div className="flex-no-shrink">
+
+                  <TabContent activeTab={this.state.activeTab}>
+                    <TabPane tabId="1">
+                      <Row>
+                        <Col sm="12">
+                          <TabProfile />
+                        </Col>
+                      </Row>
+                    </TabPane>
+                    <TabPane tabId="2">
+                      <Row>
+                        <Col sm="12">
+                          <TabAgent />
+                        </Col>
+                      </Row>
+                    </TabPane>
+                    <TabPane tabId="3">
+                      <Row>
+                        <Col sm="12">
+                          <TabActions />
+                        </Col>
+                      </Row>
+                    </TabPane>
+                    <TabPane tabId="4">
+                      <Row>
+                        <Col sm="12">
+                          <h4>HomeFit Contents</h4>
+                        </Col>
+                      </Row>
+                    </TabPane>
+                    <TabPane tabId="5">
+                      <Row>
+                        <Col sm="12">
+                          <h4>Event Contents</h4>
+                        </Col>
+                      </Row>
+                    </TabPane>
+                    <TabPane tabId="6">
+                      <Row>
+                        <Col sm="12">
+                          <h4>MLS Contents</h4>
+                        </Col>
+                      </Row>
+                    </TabPane>
+                    <TabPane tabId="7">
+                      <Row>
+                        <Col sm="12">
+                          <h4>Missions Contents</h4>
+                        </Col>
+                      </Row>
+                    </TabPane>
+                    <TabPane tabId="8">
+                      <Row>
+                        <Col sm="12">
+                          <h4>Tasks Contents</h4>
+                        </Col>
+                      </Row>
+                    </TabPane>
+                  </TabContent>
+                </div>
+              </div>
             </div>
           </div>
         </div>
