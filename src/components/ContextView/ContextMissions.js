@@ -36,7 +36,7 @@ class ContextMissions extends React.Component {
                 Area Search
               </li>
               <li>
-                <i class="fa fa-times-circle mr-1" aria-hidden="true" style={errorColor}></i>
+                <i class="fa fa-check-circle mr-1" aria-hidden="true" style={successColor}></i>
                 Kitchen Style
               </li>
               <li>
@@ -141,15 +141,29 @@ class ContextMissions extends React.Component {
         <div className="ContextView-factgroup">
           <h4>Kitchen Style</h4>
           <div className="ContextView-fact">
-            <span>Property</span>
-            <span>Attributes</span>
+            <span>
+              <i class="fa fa-check-circle mr-1" aria-hidden="true" style={successColor}></i>
+              Completed
+            </span>
           </div>
         </div>
         <div className="ContextView-factgroup">
-          <h4>Commute Search</h4>
+          <h4>Preferred Commute</h4>
           <div className="ContextView-fact">
-            <span>Property</span>
-            <span>Attributes</span>
+            <span>Location</span>
+            <span>78702, Austin, TX</span>
+          </div>
+          <div className="ContextView-fact">
+            <span>Label</span>
+            <span>Work</span>
+          </div>
+          <div className="ContextView-fact">
+            <span>Transport</span>
+            <span>Drive</span>
+          </div>
+          <div className="ContextView-fact">
+            <span>Max Time</span>
+            <span>{"<"} 30 min</span>
           </div>
         </div>
         <div className="ContextView-factgroup">

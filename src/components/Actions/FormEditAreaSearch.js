@@ -13,30 +13,37 @@ const FormEditAreaSearch = () => (
       <div className="">
         <span><i class="fa fa-map-marker text-grey-dark mr-1"></i>
         78702, Austin, TX</span>
+        <button className="LinkButton ml-2">Remove</button>
       </div>
       <div className="">
         <span><i class="fa fa-map-marker text-grey-dark mr-1"></i>
         Hyde Park, Austin, TX</span>
+        <button className="LinkButton ml-2">Remove</button>
       </div>
       <div className="">
         <span><i class="fa fa-map-marker text-grey-dark mr-1"></i>
         East Cesar Chavez, Austin, TX</span>
+        <button className="LinkButton ml-2">Remove</button>
       </div>
       <div className="">
         <span><i class="fa fa-map-marker text-grey-dark mr-1"></i>
         South Central, Austin, TX</span>
+        <button className="LinkButton ml-2">Remove</button>
       </div>
       <div className="">
         <span><i class="fa fa-map-marker text-grey-dark mr-1"></i>
         78721, Austin, TX</span>
+        <button className="LinkButton ml-2">Remove</button>
       </div>
       <div className="">
         <span><i class="fa fa-map-marker text-grey-dark mr-1"></i>
         Central East Side, Austin, TX</span>
+        <button className="LinkButton ml-2">Remove</button>
       </div>
       <div className="">
         <span><i class="fa fa-map-marker text-grey-dark mr-1"></i>
         Downtown, Austin, TX</span>
+        <button className="LinkButton ml-2">Remove</button>
       </div>
     </div>
   </div>
