@@ -63,7 +63,7 @@ class ContextMissions extends React.Component {
           </div>
           */}
           <div className="ContextView-fact">
-            <span>Home type</span>
+            <span>Home Type</span>
             <span>Homes, Condos</span>
           </div>
           <div className="ContextView-fact">

@@ -3,7 +3,7 @@ import { } from 'react-router-dom';
 
 const FormSearchMLS = () => (
   <div className="">
-    <p>Search by MLS Id or Address below. For more sophisticated searching, use our <a href="https://beta-kibana.ojointernal.com/app/kibana" target="_blank">kibana client</a>.</p>
+    <p>Search by MLS Id or Address below. For more sophisticated searching, use our <a href="https://beta-kibana.ojointernal.com/app/kibana" target="_blank" rel="noopener">kibana client</a>.</p>
     <form className="form">
       <div className="form-group">
         <input type="search" className="form-control" id="searchMLS" aria-describedby="Search MLS" placeholder="Search by MLS ID or Address..." />

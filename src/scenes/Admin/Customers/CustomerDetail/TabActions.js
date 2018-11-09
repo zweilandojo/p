@@ -9,6 +9,7 @@ import FormSendMission from "../../../../components/Actions/FormSendMission.js"
 import FormSendLink from "../../../../components/Actions/FormSendLink.js"
 import FormAssignAgent from "../../../../components/Actions/FormAssignAgent.js"
 import FormManageSubscription from "../../../../components/Actions/FormManageSubscription.js"
+import FormEditAreaSearch from "../../../../components/Actions/FormEditAreaSearch.js"
 
 const TabActions = () => (
   <div className="overflow-y-auto">
@@ -49,7 +50,7 @@ const TabActions = () => (
         <div className="card mb-8" id="FormEditAreaSearch">
           <h5 className="card-header">Edit Area Search</h5>
           <div className="card-body">
-
+            <FormEditAreaSearch />
           </div>
         </div>
 
@@ -87,27 +88,27 @@ const TabActions = () => (
       </div>
       <div className="col-sm-3 mt-16">
         <h5>Actions</h5>
-        <ul className="nav flex-column ml-0 text-base">
+        <ul className="nav flex-column ml-0">
           <li className="nav-item">
-            <Link to="#FormSendMission" className="nav-link px-0">Send Mission</Link>
+            <Link to="#FormSendMission" className="nav-link p-0">Send Mission</Link>
           </li>
           <li className="nav-item">
-            <Link to="/admin-customers-detail#FormSendLink" className="nav-link px-0">Send Link</Link>
+            <Link to="/admin-customers-detail#FormSendLink" className="nav-link p-0">Send Link</Link>
           </li>
           <li className="nav-item">
-            <Link to="/admin-customers-detail#FormEditBasicPrefs" className="nav-link px-0">Edit Basic Preferences</Link>
+            <Link to="/admin-customers-detail#FormEditBasicPrefs" className="nav-link p-0">Edit Basic Preferences</Link>
           </li>
           <li className="nav-item">
-            <Link to="/admin-customers-detail#FormEditAreaSearch" className="nav-link px-0">Edit Area Search</Link>
+            <Link to="/admin-customers-detail#FormEditAreaSearch" className="nav-link p-0">Edit Area Search</Link>
           </li>
           <li className="nav-item">
-            <Link to="/admin-customers-detail#FormAssignAgent" className="nav-link px-0">Assign Agent</Link>
+            <Link to="/admin-customers-detail#FormAssignAgent" className="nav-link p-0">Assign Agent</Link>
           </li>
           <li className="nav-item">
-            <Link to="/admin-customers-detail#FormSpamUser" className="nav-link px-0">Spam User</Link>
+            <Link to="/admin-customers-detail#FormSpamUser" className="nav-link p-0">Spam User</Link>
           </li>
           <li className="nav-item">
-            <Link to="/admin-customers-detail#FormManageSubscription" className="nav-link px-0">Unsubscribe</Link>
+            <Link to="/admin-customers-detail#FormManageSubscription" className="nav-link p-0">Unsubscribe</Link>
           </li>
         </ul>
       </div>

@@ -37,12 +37,6 @@ const FormSendLink = () => (
               Preferred Commute List (/homefit/preferred-commute)
             </label>
           </div>
-          <div className="form-check">
-            <label className="form-check-label" labelFor="gridCheck1">
-              <input className="form-check-input" name="mission" type="radio" id="gridCheck1" />
-              Mortgage Handoff
-            </label>
-          </div>
         </div>
       </div>
     </fieldset>
