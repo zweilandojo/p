@@ -7,34 +7,35 @@ const FormSendLink = () => (
       <div className="row">
         <legend className="col-form-label col-sm-3 pt-0">Which page?</legend>
         <div className="col-sm-9">
+
           <div className="form-check">
             <label className="form-check-label" labelFor="gridCheck1">
               <input className="form-check-input" name="mission" type="radio" id="gridCheck1" />
-              Discover (/discovery)
+              Recommended Homes
             </label>
           </div>
           <div className="form-check">
             <label className="form-check-label" labelFor="gridCheck1">
               <input className="form-check-input" name="mission" type="radio" id="gridCheck1" />
-              Favorites (/favorites/list)
+              Favorite Homes
             </label>
           </div>
           <div className="form-check">
             <label className="form-check-label" labelFor="gridCheck1">
               <input className="form-check-input" name="mission" type="radio" id="gridCheck1" />
-              HomeFit List (/homefit/overall)
+              Kitchen Style Matches
             </label>
           </div>
           <div className="form-check">
             <label className="form-check-label" labelFor="gridCheck1">
               <input className="form-check-input" name="mission" type="radio" id="gridCheck1" />
-              Kitchen Style List (/homefit/styles/kitchen)
+              Commute Matches
             </label>
           </div>
           <div className="form-check">
             <label className="form-check-label" labelFor="gridCheck1">
               <input className="form-check-input" name="mission" type="radio" id="gridCheck1" />
-              Preferred Commute List (/homefit/preferred-commute)
+              Recommended Neighborhoods
             </label>
           </div>
         </div>

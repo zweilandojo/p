@@ -18,7 +18,7 @@ const TabActions = () => (
 
         {/* Action: Send Mission */}
         <div className="card mb-8" id="FormSendMission">
-          <h5 className="card-header">Send Mission</h5>
+          <h5 className="card-header">Send Mission to User</h5>
           <div className="card-body">
             <FormSendMission />
             <hr/>
@@ -32,7 +32,7 @@ const TabActions = () => (
           <div className="card-body">
             <FormSendLink />
             <hr/>
-            <button type="submit" className="btn btn-primary">Send Link</button>
+            <button type="submit" className="btn btn-primary">Send List to User</button>
           </div>
         </div>
 
@@ -90,10 +90,10 @@ const TabActions = () => (
         <h5>Actions</h5>
         <ul className="nav flex-column ml-0">
           <li className="nav-item">
-            <Link to="#FormSendMission" className="nav-link p-0">Send Mission</Link>
+            <Link to="#FormSendMission" className="nav-link p-0">Send Mission to User</Link>
           </li>
           <li className="nav-item">
-            <Link to="/admin-customers-detail#FormSendLink" className="nav-link p-0">Send Link</Link>
+            <Link to="/admin-customers-detail#FormSendLink" className="nav-link p-0">Send List to User</Link>
           </li>
           <li className="nav-item">
             <Link to="/admin-customers-detail#FormEditBasicPrefs" className="nav-link p-0">Edit Basic Preferences</Link>
