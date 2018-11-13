@@ -36,9 +36,20 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+
+/* Code */
+code, kbd, pre, samp {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+pre {
+  display: block;
+  font-size: 87.5%;
+  color: #212529;
+}
+pre {
+  padding: 10px;
+  background-color: whitesmoke;
+  border: 1px solid #dee2e6;
 }
 
 
@@ -585,6 +596,9 @@ textarea {
   color: #6c757d;
   content: "/";
 }
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: 0;
+}
 
 
 /* Page Specific */
@@ -601,6 +615,25 @@ textarea {
 .TaskLoading-header {
   margin-top: 0;
   text-align: center;
+}
+
+/* Status Page */
+.StatusPage-title {
+  flex-shrink: 0;
+  margin-left: 30px;
+}
+.StatusPage-titlemain {
+  text-transform: uppercase;
+  color: #1f587e;
+  font-size: 12px;
+  line-height: 12px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+.StatusPage-titlesub {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 30px;
 }
 
 /* Navigation */
@@ -823,7 +856,9 @@ textarea {
 }
 
 .ReactTable .rt-thead.-header {
-  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15); */
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  background-color: #FAFAFA;
 }
 .ReactTable .rt-tr {
   -webkit-box-flex: 1;
@@ -834,11 +869,11 @@ textarea {
   display: inline-flex;
 }
 .ReactTable .rt-thead .rt-tr {
-  text-align: center;
+  text-align: left;
 }
 .ReactTable .rt-thead .rt-th,
 .ReactTable .rt-thead .rt-td {
-  padding: 5px 5px;
+  padding: 8px;
   line-height: normal;
   position: relative;
   border-right: 1px solid rgba(0,0,0,0.05);
@@ -848,6 +883,7 @@ textarea {
 }
 .ReactTable .rt-tbody .rt-td {
   border-right: 1px solid rgba(0,0,0,0.02);
+  padding: 8px;
 }
 .ReactTable .rt-thead .rt-resizable-header {
   overflow: visible;
@@ -889,6 +925,9 @@ textarea {
 }
 .ReactTable .rt-tbody .rt-tr-group {
   border-bottom: solid 1px rgba(0,0,0,0.05);
+}
+.ReactTable .rt-tbody .rt-tr-group:hover {
+  background-color: rgba(255,245,157,0.25);
 }
 .ReactTable .rt-tr {
   -webkit-box-flex: 1;
