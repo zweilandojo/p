@@ -14,7 +14,7 @@ const TabBrokerageAgents = () => (
             <a
               href="https://docs.google.com/spreadsheets/d/1WRvLjNYWYmVXIGwrLmOmT_4yC1VFPeHgV8llOoNro0M/edit#gid=0"
               target="_blank"
-              className="btn"
+              className="btn btn-secondary"
             >
               Export
             </a>

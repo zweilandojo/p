@@ -39,7 +39,7 @@ class BrokerageDetail extends React.Component {
           currentPage="Brokerage ID"
         />
         <div className="Admin-content">
-          <div className="Card ml-5">
+          <div className="Card">
             <div className="Card-content">
               <div className="StatusPage-title ml-0">
                 <div className="StatusPage-titlemain">Brokerages</div>
