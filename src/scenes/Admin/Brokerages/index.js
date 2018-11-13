@@ -238,10 +238,14 @@ class AdminBrokerages extends React.Component {
               <div className="Card-content">
                 <div className="no-shrink">
                   <h1>Brokerages</h1>
-                  <div class="input-group mb-4 max-w-xs">
-                    <input type="text" class="form-control" placeholder="Search by name or ID" value="" />
-                    <div class="input-group-append">
-                      <button class="btn btn-primary" type="button">Search</button>
+                  <div className="input-group mb-4 max-w-xs">
+                    <input
+                      type="search"
+                      className="form-control"
+                      placeholder="Search by Name, Phone, ID, or Zip"
+                    />
+                    <div className="input-group-append">
+                      <button className="btn btn-primary" type="button">Search</button>
                     </div>
                   </div>
                 </div>

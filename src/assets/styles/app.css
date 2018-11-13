@@ -249,6 +249,14 @@ button, select {
   border-color: #269dc5;
   box-shadow: 0;
 }
+.btn-primary:focus, .btn-primary.focus {
+  box-shadow: none;
+}
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: none;
+  background-color: #757575;
+  border-color: #757575;
+}
 .btn-link {
   font-weight: 400;
   color: #269dc5;
@@ -380,6 +388,13 @@ border: 1px solid #dee2e6;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: #BDBDBD;
+}
+.input-group .form-control:focus {
+  border-right: 0;
 }
 
 .input-group > .form-control, .input-group > .custom-select, .input-group > .custom-file {
@@ -873,7 +888,7 @@ textarea {
 }
 .ReactTable .rt-thead .rt-th,
 .ReactTable .rt-thead .rt-td {
-  padding: 8px;
+  padding: 8px 8px;
   line-height: normal;
   position: relative;
   border-right: 1px solid rgba(0,0,0,0.05);

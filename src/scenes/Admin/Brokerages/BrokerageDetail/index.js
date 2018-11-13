@@ -9,9 +9,6 @@ import Breadcrumbs2 from '../../../../components/Breadcrumbs/index2.js'
 import TabBrokerageProfile from './TabBrokerageProfile.js'
 import TabBrokerageAgents from './TabBrokerageAgents.js'
 
-// import TabActions from './TabActions.js'
-// import FormSearchMLS from '../../../../components/Actions/FormSearchMLS.js'
-
 class BrokerageDetail extends React.Component {
   constructor(props) {
     super(props);
@@ -64,7 +61,7 @@ class BrokerageDetail extends React.Component {
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    className={classnames({ active: this.state.activeTab === '3' })}
+                    className={classnames({ active: this.state.activeTab === '4' })}
                     onClick={() => { this.toggle('3'); }}
                   >
                     Actions
@@ -96,17 +93,12 @@ class BrokerageDetail extends React.Component {
                     </TabPane>
                     <TabPane tabId="3">
                       <Col sm="12">
-                        {/* <TabActions /> */}
-                      </Col>
-                    </TabPane>
-                    <TabPane tabId="4">
-                      <Col sm="12">
                         <div className="JsonView">
                           <h4>HomeFit Contents</h4>
                         </div>
                       </Col>
                     </TabPane>
-                    <TabPane tabId="5">
+                    <TabPane tabId="4">
                       <Col sm="12">
                         <div className="JsonView">
                           <h4>Brokerage Events</h4>

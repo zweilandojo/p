@@ -4,9 +4,30 @@ import {  } from 'react-router-dom';
 const TabBrokerageProfile = () => (
   <div className="overflow-y-auto">
     <div className="flex-no-shrink">
-      <div className="JsonView">
-      <pre>
-      {`
+      <div className="JsonView flex flex-wrap">
+        <div className="flex w-full mb-12 border-b border-color-lighter pb-8">
+          <div className="w-1/4">
+            <h4 className="text-base">Market</h4>
+            <p className="text-3xl">Houston, TX</p>
+          </div>
+          <div className="w-1/4">
+            <h4 className="text-base">Agents</h4>
+            <p className="text-3xl">34 <span className="text-grey-dark text-base">/ 34 Enabled (100%)</span></p>
+          </div>
+          <div className="w-1/4">
+            <h4 className="text-base">Zip Codes</h4>
+            <p className="text-3xl">21 <span className="text-grey-dark text-base">/ 90% Covered</span></p>
+          </div>
+          <div className="w-1/4">
+            <h4 className="text-base">Referrals Offered</h4>
+            <p className="text-3xl">109 <span className="text-grey-dark text-base">/ 89 Awarded (82%)</span></p>
+          </div>
+        </div>
+
+      <div className="w-1/2">
+        <h4 className="text-2xl mb-4">All Details</h4>
+        <pre>
+        {`
   {
     "id": "7271030c-07a7-4c6a-9b81-dfeacac6282f",
     "createdAt": "2018-08-31T19:42:47.736788Z",
@@ -83,8 +104,124 @@ const TabBrokerageProfile = () => (
     "revision": "98498645",
     "profileType": "real-estate-brokerage"
     }
-        `}
-        </pre>
+          `}
+          </pre>
+        </div>
+
+        <div className="w-1/2 px-8">
+
+          <div className="mb-4">
+            <h4 className="text-2xl mb-4">Area Coverage</h4>
+            <table className="table text-base">
+              <thead>
+                <tr>
+                  <th>Zip Code</th>
+                  <th># of Referrals</th>
+                  <th>Agents Covering</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>77044</td>
+                  <td>23</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>77336</td>
+                  <td>2</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>77338</td>
+                  <td>3</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>77339</td>
+                  <td>4</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>77345</td>
+                  <td>11</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>77346</td>
+                  <td>6</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>77357</td>
+                  <td>12</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>77365</td>
+                  <td>4</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>77396</td>
+                  <td>17</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>77532</td>
+                  <td>0</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>77598</td>
+                  <td>0</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>77520</td>
+                  <td>1</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>77521</td>
+                  <td>1</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>77522</td>
+                  <td>1</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>77523</td>
+                  <td>0</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>77520</td>
+                  <td>0</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>77523</td>
+                  <td>23</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>77580</td>
+                  <td>23</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>77049</td>
+                  <td>23</td>
+                  <td>2</td>
+                </tr>
+              </tbody>
+            </table>
+
+
+          </div>
+        </div>
       </div>
     </div>
   </div>
