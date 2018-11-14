@@ -28,7 +28,7 @@ const TabActions = () => (
 
         {/* Action: Send Link */}
         <div className="card mb-8" id="FormSendLink">
-          <h5 className="card-header">Send Link</h5>
+          <h5 className="card-header">Send List to User</h5>
           <div className="card-body">
             <FormSendLink />
             <hr/>

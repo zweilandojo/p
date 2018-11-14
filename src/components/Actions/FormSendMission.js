@@ -10,7 +10,7 @@ const FormSendMission = () => (
           <div className="form-check">
             <label className="form-check-label" labelFor="gridCheck1">
               <input className="form-check-input" name="mission" type="radio" id="gridCheck1" />
-              Versus
+              HomeFit Quiz
             </label>
           </div>
           <div className="form-check">
@@ -40,7 +40,7 @@ const FormSendMission = () => (
           <div className="form-check">
             <label className="form-check-label" labelFor="gridCheck1">
               <input className="form-check-input" name="mission" type="radio" id="gridCheck1" />
-              Commute Search
+              Preferred Commute
             </label>
           </div>
           <div className="form-check">

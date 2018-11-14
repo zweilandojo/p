@@ -25,7 +25,7 @@ class ContextMissions extends React.Component {
             <ul className="list-reset px-2 mb-0">
               <li>
                 <i class="fa fa-check-circle mr-1" aria-hidden="true" style={successColor}></i>
-                Versus
+                HomeFit Quiz
               </li>
               <li>
                 <i class="fa fa-check-circle mr-1" aria-hidden="true" style={successColor}></i>
@@ -41,7 +41,7 @@ class ContextMissions extends React.Component {
               </li>
               <li>
                 <i class="fa fa-times-circle mr-1" aria-hidden="true" style={errorColor}></i>
-                Commute Search
+                Preferred Commute
               </li>
               <li>
                 <i class="fa fa-times-circle mr-1" aria-hidden="true" style={errorColor}></i>
@@ -92,7 +92,7 @@ class ContextMissions extends React.Component {
           </div>
         </div>
         <div className="ContextView-factgroup">
-          <h4>Versus</h4>
+          <h4>HomeFit Quiz</h4>
           <div className="ContextView-fact">
             <span>Living with</span>
             <span>Pets &amp; Family</span>
