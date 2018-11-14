@@ -1,10 +1,13 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import ReactTable from "react-table";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import ReactTable from "react-table"
+import withFixedColumns from 'react-table-hoc-fixed-columns'
 
 // Components
 import AdminAppHeader from '../../../components/AppHeader/AdminAppHeader.js'
 import Breadcrumbs from '../../../components/Breadcrumbs/index.js'
+
+const ReactTableFixedColumns = withFixedColumns(ReactTable)
 
 class AdminAgents extends React.Component {
   constructor(props) {
@@ -43,51 +46,82 @@ class AdminAgents extends React.Component {
 
     const data = [
       {
-        agentFullName: 'Carol Alford',
+        agentFirstName: 'Carol',
+        agentLastName: 'Alford',
         phone: '1 (832) 514-9042',
         email: 'carol.alford@cbunited.com',
         areas: '-',
         zipCodes: '77044, 77336, 77338, 77339, 77345, 77346, 77357, 77365, 77396, 77532, 77536, 77598, 77520, 77521, 77522, 77523, 77520, 77521, 77523, 77580, 77049',
         externalID: '100857115',
-        isMatching: '✓'
+        isMatching: '✓',
+        brokerage: 'Coldwell Banker United, Realtors',
+        metro: 'Houston, TX',
+        type: 'Listing',
+        numZipsCovered: '22'
       },
       {
-        agentFullName: 'James	Balleza',
+        agentFirstName: 'James',
+        agentLastName: 'Balleza',
+        agentFullName: 'James Balleza',
         phone: '1 (713) 703-0592',
         email: 'james.balleza@cbunited.com',
         areas: '-',
         zipCodes: '777044, 77336, 77338, 77339, 77345, 77346, 77357',
         externalID: '900618',
-        isMatching: '✓'
+        isMatching: '✓',
+        brokerage: 'Coldwell Banker United, Realtors',
+        metro: 'Houston, TX',
+        type: 'Listing',
+        numZipsCovered: '4'
       },
       {
+        agentFirstName: 'Robert',
+        agentLastName: 'Dunn',
         agentFullName: 'Robert Dunn',
         phone: '1 (713) 398-7043',
         email: 'bob.dunn@cbunited.com',
         areas: '-',
         zipCodes: '77002, 77004, 77005, 77006, 77007, 77008, 77009, 77019, 77024, 77025, 77027, 77030, 77043, 77046, 77055, 77056, 77057, 77063, 77092, 77096, 77098, 77401',
         externalID: '900622',
-        isMatching: '✓'
+        isMatching: '✓',
+        brokerage: 'Coldwell Banker United, Realtors',
+        metro: 'Houston, TX',
+        type: 'CET',
+        numZipsCovered: '8'
       },
       {
+        agentFirstName: 'John',
+        agentLastName: 'Trang',
         agentFullName: 'John	Trang',
         phone: '1 (346) 213-7903',
         email: 'john.trang@cbunited.com',
         areas: '-',
         zipCodes: '77044, 7736',
         externalID: '98506556',
-        isMatching: '✓'
+        isMatching: '✓',
+        brokerage: 'Coldwell Banker United, Realtors',
+        metro: 'Houston, TX',
+        type: 'PbZ',
+        numZipsCovered: '10'
       },
       {
+        agentFirstName: 'Debbie',
+        agentLastName: 'Holder',
         agentFullName: 'Debbie Holder',
         phone: '1 (713) 542-7289',
         email: 'debbie.holder@cbunited.com',
         areas: '-',
         zipCodes: '77044, 7736',
         externalID: '111244447',
-        isMatching: '✓'
+        isMatching: '✓',
+        brokerage: 'Coldwell Banker United, Realtors',
+        metro: 'Houston, TX',
+        type: 'Listing',
+        numZipsCovered: '12'
       },
       {
+        agentFirstName: 'Angela',
+        agentLastName: 'Harris',
         agentFullName: 'Angela	Harris',
         phone: '1 (832) 525-7016',
         email: 'angela.harris@cbunited.com',
@@ -95,36 +129,56 @@ class AdminAgents extends React.Component {
         zipCodes: '77044, 7736',
         ojoPhone: '+1 (512) 555-0001',
         externalID: '98506501',
-        isMatching: '✓'
+        isMatching: '✓',
+        brokerage: 'Coldwell Banker United, Realtors',
+        metro: 'Houston, TX',
+        type: 'Listing',
+        numZipsCovered: '12'
       },
       {
+        agentFirstName: 'Jessica',
+        agentLastName: 'Ellis',
         agentFullName: 'Jessica	Ellis',
         phone: '1 (207) 319-2172',
         email: 'jessica.ellis@cbunited.com',
         areas: '-',
         zipCodes: '77044, 7736',
         externalID: '98506486',
-        isMatching: '✓'
+        isMatching: '✓',
+        brokerage: 'Coldwell Banker United, Realtors',
+        metro: 'Houston, TX',
+        type: 'Listing',
+        numZipsCovered: '12'
       },
       {
+        agentFirstName: 'Kerry',
+        agentLastName: 'Jackson',
         agentFullName: 'Kerry	Jackson',
         phone: '1 (817) 800-7105',
         email: 'kerry.jackson@cbunited.com',
         areas: '-',
         zipCodes: '77044, 7736',
         externalID: '98506513',
-        isMatching: '✗'
+        isMatching: '✕'
       },
       {
+        agentFirstName: 'Shannon',
+        agentLastName: 'Elliot',
         agentFullName: 'Shannon	Elliot',
         phone: '1 (832) 310-3504',
         email: 'kerry.jackson@cbunited.com',
         areas: '-',
         zipCodes: '77044, 7736',
         externalID: '98506513',
-        isMatching: '✗'
+        isMatching: '✕',
+        brokerage: 'Coldwell Banker United, Realtors',
+        metro: 'Houston, TX',
+        type: 'PbZ',
+        numZipsCovered: '12'
       },
       {
+        agentFirstName: 'Beverly',
+        agentLastName: 'Thompson',
         agentFullName: 'Beverly	Thompson',
         phone: '1 (817) 891-1896',
         email: 'beverly.thompson@cbunited.com',
@@ -134,59 +188,94 @@ class AdminAgents extends React.Component {
         isMatching: '✓'
       },
       {
+        agentFirstName: 'Kathy',
+        agentLastName: 'West',
         agentFullName: 'Kathy	West',
         phone: '1 (281) 799-8768',
         email: 'kathy.west@cbunited.com',
-        zipCodes: '77044, 7736',
         areas: '-',
         zipCodes: '77044, 7736',
         externalID: '98506567',
-        isMatching: '✓'
+        isMatching: '✓',
+        brokerage: 'Coldwell Banker United, Realtors',
+        metro: 'Houston, TX',
+        type: 'Listing',
+        numZipsCovered: '12'
       },
       {
+        agentFirstName: 'Teresa',
+        agentLastName: 'Saldana',
         agentFullName: 'Teresa	Saldana',
         phone: '1 (713) 471-3144',
         email: 'teresa.saldana@cbunited.com',
         areas: '-',
         zipCodes: '77044, 7736',
         externalID: '98506518',
-        isMatching: '✓'
+        isMatching: '✓',
+        brokerage: 'Coldwell Banker United, Realtors',
+        metro: 'Houston, TX',
+        type: 'Listing',
+        numZipsCovered: '12'
       },
       {
+        agentFirstName: 'Liliana',
+        agentLastName: 'Soukayem',
         agentFullName: 'Liliana	Soukayem',
         phone: '1 (915) 727-6724',
         email: 'liliana.soukayem@cbunited.com',
         areas: '-',
         zipCodes: '77044, 7736',
         externalID: '98506539',
-        isMatching: '✓'
+        isMatching: '✓',
+        brokerage: 'Coldwell Banker United, Realtors',
+        metro: 'Houston, TX',
+        type: 'Listing',
+        numZipsCovered: '12'
       },
       {
+        agentFirstName: 'Kirk',
+        agentLastName: 'Craig',
         agentFullName: 'Kirk	Craig',
         phone: '1 (832) 707-3611',
         email: 'kirk.craig@cbunited.com',
         areas: '-',
         zipCodes: '77044, 7736',
         externalID: '98506463',
-        isMatching: '✓'
+        isMatching: '✓',
+        brokerage: 'Coldwell Banker United, Realtors',
+        metro: 'Houston, TX',
+        type: 'Listing',
+        numZipsCovered: '12'
       },
       {
+        agentFirstName: 'Honi',
+        agentLastName: 'Alexander',
         agentFullName: 'Honi	Alexander',
         phone: '1 (281) 725-4710',
         email: 'honi.alexander@cbunited.com',
         areas: '-',
         zipCodes: '77058, 77059, 77062, 77539, 77546, 77565, 77568, 77573, 77581, 77584, 77586',
         externalID: '98506580',
-        isMatching: '✓'
+        isMatching: '✓',
+        brokerage: 'Coldwell Banker United, Realtors',
+        metro: 'Houston, TX',
+        type: 'Listing',
+        numZipsCovered: '12'
       },
       {
+        agentFirstName: 'Donna',
+        agentLastName: 'Williams',
         agentFullName: 'Donna Williams',
         phone: '1 (832) 928-6633',
         email: 'donna.williams@cbunited.com',
         areas: '-',
         zipCodes: '77066, 77067, 77068, 77069, 77090, 77316, 77318, 77356, 77373, 77378, 77379, 77380, 77381, 77382, 77384, 77385, 77386, 77388, 77389',
         externalID: '100853624',
-        isMatching: '✓'
+        isMatching: '✓',
+        brokerage: 'Coldwell Banker United, Realtors',
+        metro: 'Houston, TX',
+        type: 'Listing',
+        numZipsCovered: '12'
       }
     ]
 
@@ -205,35 +294,52 @@ class AdminAgents extends React.Component {
           />
         );
       },
-      width:'30'
-    }, {
-      Header: 'Agent Name',
-      accessor: 'agentFullName',
-      Cell: ({ row }) => (<Link to={{ pathname: `/admin-agent-detail` }}>{row.agentFullName}</Link>),
-      width:'240'
-    }, {
-      Header: 'Phone',
-      accessor: 'phone',
-      width:'140'
+      width:'30',
+      fixed: 'left'
     }, {
       Header: 'Email',
       accessor: 'email',
-      Cell: ({ row }) => (<a href={`mailto:` + row.email}>{row.email}</a>),
-      width:'220'
+      Cell: ({ row }) => (<Link to={{ pathname: `/admin-agent-detail` }}>{row.email}</Link>),
+      width:'240',
+      fixed: 'left'
+    }, {
+      Header: 'First Name',
+      accessor: 'agentFirstName',
+      width:'96'
+    }, {
+      Header: 'Last Name',
+      accessor: 'agentLastName',
+      width:'96'
+    }, {
+      Header: 'Phone',
+      accessor: 'phone',
+      width:'130'
     }, {
       Header: 'ID',
       accessor: 'externalID',
       width:'90'
     }, {
+      Header: 'Type',
+      accessor: 'type',
+      width:'60'
+    }, {
       Header: 'Matching',
       accessor: 'isMatching',
       width:'80'
     }, {
-      Header: 'Areas',
-      accessor: 'areas',
-      width:'70'
+      Header: 'Brokerage',
+      accessor: 'brokerage',
+      width:'320'
     }, {
-      Header: 'Zips Covered',
+      Header: 'Market',
+      accessor: 'metro',
+      width:'100'
+    }, {
+      Header: '# Zips Covered',
+      accessor: 'numZipsCovered',
+      width:'116'
+    }, {
+      Header: 'Zips',
       accessor: 'zipCodes',
       width:'440'
     }]
@@ -247,7 +353,7 @@ class AdminAgents extends React.Component {
             <div className="Card">
               <div className="Card-content">
                 <div className="no-shrink">
-                  <h1>Agents</h1>
+                  <h1 className="mb-4">Agents</h1>
                 </div>
 
                 <div className="mb-2 flex justify-between">
@@ -273,10 +379,10 @@ class AdminAgents extends React.Component {
                 </div>
 
                 <div>
-                  <ReactTable
+                  <ReactTableFixedColumns
                     data={data}
                     columns={columns}
-				            defaultSorted={[{ id: "agentFullName", desc: false }]}
+				            defaultSorted={[{ id: "agentLastName", desc: false }]}
                   />
                 </div>
 

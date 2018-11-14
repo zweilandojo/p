@@ -20,14 +20,14 @@ const TabBrokerageProfile = () => (
           </div>
           <div className="w-1/4">
             <h4 className="text-base">Referrals Offered</h4>
-            <p className="text-3xl">109 <span className="text-grey-dark text-base">/ 89 Awarded (82%)</span></p>
+            <p className="text-3xl">89 Awarded <span className="text-grey-dark text-base">/ 109 (82%)</span></p>
           </div>
         </div>
 
-      <div className="w-1/2">
-        <h4 className="text-2xl mb-4">All Details</h4>
-        <pre>
-        {`
+        <div className="w-1/2">
+          <h4 className="text-2xl mb-4">All Details</h4>
+          <pre>
+          {`
   {
     "id": "7271030c-07a7-4c6a-9b81-dfeacac6282f",
     "createdAt": "2018-08-31T19:42:47.736788Z",
@@ -104,9 +104,9 @@ const TabBrokerageProfile = () => (
     "revision": "98498645",
     "profileType": "real-estate-brokerage"
     }
-          `}
-          </pre>
-        </div>
+            `}
+            </pre>
+          </div>
 
         <div className="w-1/2 px-8">
 

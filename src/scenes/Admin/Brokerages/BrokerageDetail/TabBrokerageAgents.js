@@ -1,6 +1,9 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import ReactTable from "react-table";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import ReactTable from "react-table"
+import withFixedColumns from 'react-table-hoc-fixed-columns'
+
+const ReactTableFixedColumns = withFixedColumns(ReactTable)
 
 class TabBrokerageAgents extends React.Component {
 
@@ -40,175 +43,266 @@ class TabBrokerageAgents extends React.Component {
 
     const data = [
       {
+        email: 'carol.alford@cbunited.com',
+        agentFirstName: 'Carol',
+        agentLastName: 'Alford',
         agentFullName: 'Carol Alford',
         phone: '1 (832) 514-9042',
-        email: 'carol.alford@cbunited.com',
-        areas: '-',
-        zipCodes: '77044, 77336, 77338, 77339, 77345, 77346, 77357, 77365, 77396, 77532, 77536, 77598, 77520, 77521, 77522, 77523, 77520, 77521, 77523, 77580, 77049',
         externalID: '100857115',
-        isMatching: '✓'
+        isMatching: '✓',
+        referralsSent: '20',
+        referralsRespondedTo: '2',
+        referralsWon: '1',
+        responseTime: '1m 5s',
+        areas: '-',
+        numZipsCovered: '28',
+        zipCodes: '77044, 77336, 77338, 77339, 77345, 77346, 77357, 77365, 77396, 77532, 77536, 77598, 77520, 77521, 77522, 77523, 77520, 77521, 77523, 77580, 77049'
       },
       {
+        email: 'james.balleza@cbunited.com',
+        agentFirstName: 'James',
+        agentLastName: 'Balleza',
         agentFullName: 'James	Balleza',
         phone: '1 (713) 703-0592',
-        email: 'james.balleza@cbunited.com',
-        areas: '-',
-        zipCodes: '777044, 77336, 77338, 77339, 77345, 77346, 77357',
         externalID: '900618',
-        isMatching: '✓'
+        isMatching: '✓',
+        referralsSent: '20',
+        referralsRespondedTo: '2',
+        referralsWon: '1',
+        responseTime: '1m 5s',
+        areas: '-',
+        numZipsCovered: '7',
+        zipCodes: '777044, 77336, 77338, 77339, 77345, 77346, 77357'
       },
       {
+        email: 'bob.dunn@cbunited.com',
+        agentFirstName: 'Robert',
+        agentLastName: 'Dunn',
         agentFullName: 'Robert Dunn',
         phone: '1 (713) 398-7043',
-        email: 'bob.dunn@cbunited.com',
-        areas: '-',
-        zipCodes: '77002, 77004, 77005, 77006, 77007, 77008, 77009, 77019, 77024, 77025, 77027, 77030, 77043, 77046, 77055, 77056, 77057, 77063, 77092, 77096, 77098, 77401',
         externalID: '900622',
-        isMatching: '✓'
+        isMatching: '✓',
+        referralsSent: '20',
+        referralsRespondedTo: '2',
+        referralsWon: '1',
+        responseTime: '1m 5s',
+        areas: '-',
+        numZipsCovered: '22',
+        zipCodes: '77002, 77004, 77005, 77006, 77007, 77008, 77009, 77019, 77024, 77025, 77027, 77030, 77043, 77046, 77055, 77056, 77057, 77063, 77092, 77096, 77098, 77401'
       },
       {
+        email: 'john.trang@cbunited.com',
+        agentFirstName: 'John',
+        agentLastName: 'Trang',
         agentFullName: 'John	Trang',
         phone: '1 (346) 213-7903',
-        email: 'john.trang@cbunited.com',
-        areas: '-',
-        zipCodes: '77044, 7736',
         externalID: '98506556',
-        isMatching: '✓'
+        isMatching: '✓',
+        referralsSent: '20',
+        referralsRespondedTo: '2',
+        referralsWon: '1',
+        responseTime: '1m 5s',
+        areas: '-',
+        numZipsCovered: '2',
+        zipCodes: '77044, 7736'
       },
       {
+        email: 'debbie.holder@cbunited.com',
+        agentFirstName: 'Debbie',
+        agentLastName: 'Holder',
         agentFullName: 'Debbie Holder',
         phone: '1 (713) 542-7289',
-        email: 'debbie.holder@cbunited.com',
-        areas: '-',
-        zipCodes: '77044, 7736',
         externalID: '111244447',
-        isMatching: '✓'
+        isMatching: '✓',
+        referralsSent: '20',
+        referralsRespondedTo: '2',
+        referralsWon: '1',
+        responseTime: '1m 5s',
+        areas: '-',
+        numZipsCovered: '2',
+        zipCodes: '77044, 7736'
       },
       {
+        email: 'angela.harris@cbunited.com',
+        agentFirstName: 'Angela',
+        agentLastName: 'Harris',
         agentFullName: 'Angela	Harris',
         phone: '1 (832) 525-7016',
-        email: 'angela.harris@cbunited.com',
-        areas: '-',
-        zipCodes: '77044, 7736',
-        ojoPhone: '+1 (512) 555-0001',
         externalID: '98506501',
-        isMatching: '✓'
+        isMatching: '✓',
+        referralsSent: '20',
+        referralsRespondedTo: '2',
+        referralsWon: '1',
+        responseTime: '1m 5s',
+        areas: '-',
+        numZipsCovered: '2',
+        zipCodes: '77044, 7736',
+        phone: '+1 (512) 555-0001'
       },
       {
+        email: 'jessica.ellis@cbunited.com',
+        agentFirstName: 'Jessica',
+        agentLastName: 'Ellis',
         agentFullName: 'Jessica	Ellis',
         phone: '1 (207) 319-2172',
-        email: 'jessica.ellis@cbunited.com',
-        areas: '-',
-        zipCodes: '77044, 7736',
         externalID: '98506486',
-        isMatching: '✓'
+        isMatching: '✓',
+        referralsSent: '20',
+        referralsRespondedTo: '2',
+        referralsWon: '1',
+        responseTime: '1m 5s',
+        areas: '-',
+        numZipsCovered: '2',
+        zipCodes: '77044, 7736'
       },
       {
+        email: 'kerry.jackson@cbunited.com',
+        agentFirstName: 'Kerry',
+        agentLastName: 'Jackson',
         agentFullName: 'Kerry	Jackson',
         phone: '1 (817) 800-7105',
-        email: 'kerry.jackson@cbunited.com',
-        areas: '-',
-        zipCodes: '77044, 7736',
         externalID: '98506513',
-        isMatching: '✗'
+        isMatching: '✗',
+        referralsSent: '20',
+        referralsRespondedTo: '2',
+        referralsWon: '1',
+        responseTime: '1m 5s',
+        areas: '-',
+        numZipsCovered: '2',
+        zipCodes: '77044, 7736'
       },
       {
+        email: 'kerry.jackson@cbunited.com',
+        agentFirstName: 'Shannon',
+        agentLastName: 'Elliot',
         agentFullName: 'Shannon	Elliot',
         phone: '1 (832) 310-3504',
-        email: 'kerry.jackson@cbunited.com',
-        areas: '-',
-        zipCodes: '77044, 7736',
         externalID: '98506513',
-        isMatching: '✗'
+        isMatching: '✗',
+        referralsSent: '20',
+        referralsRespondedTo: '2',
+        referralsWon: '1',
+        responseTime: '1m 5s',
+        areas: '-',
+        numZipsCovered: '2',
+        zipCodes: '77044, 7736'
       },
       {
+        email: 'beverly.thompson@cbunited.com',
+        agentFirstName: 'Beverly',
+        agentLastName: 'Thompson',
         agentFullName: 'Beverly	Thompson',
         phone: '1 (817) 891-1896',
-        email: 'beverly.thompson@cbunited.com',
-        areas: '-',
-        zipCodes: '77044, 7736',
         externalID: '98506549',
-        isMatching: '✓'
+        isMatching: '✓',
+        referralsSent: '20',
+        referralsRespondedTo: '2',
+        referralsWon: '1',
+        responseTime: '1m 5s',
+        areas: '-',
+        numZipsCovered: '2',
+        zipCodes: '77044, 7736'
       },
       {
+        email: 'kathy.west@cbunited.com',
+        agentFirstName: 'Kathy',
+        agentLastName: 'West',
         agentFullName: 'Kathy	West',
         phone: '1 (281) 799-8768',
-        email: 'kathy.west@cbunited.com',
+        externalID: '98506567',
+        isMatching: '✓',
+        referralsSent: '20',
+        referralsRespondedTo: '2',
+        referralsWon: '1',
+        responseTime: '1m 5s',
         zipCodes: '77044, 7736',
         areas: '-',
-        zipCodes: '77044, 7736',
-        externalID: '98506567',
-        isMatching: '✓'
+        numZipsCovered: '2',
+        zipCodes: '77044, 7736'
       },
       {
+        email: 'teresa.saldana@cbunited.com',
+        agentFirstName: 'Teresa',
+        agentLastName: 'Saldana',
         agentFullName: 'Teresa	Saldana',
         phone: '1 (713) 471-3144',
-        email: 'teresa.saldana@cbunited.com',
-        areas: '-',
-        zipCodes: '77044, 7736',
         externalID: '98506518',
-        isMatching: '✓'
+        isMatching: '✓',
+        referralsSent: '20',
+        referralsRespondedTo: '2',
+        referralsWon: '1',
+        responseTime: '1m 5s',
+        areas: '-',
+        numZipsCovered: '2',
+        zipCodes: '77044, 7736'
       },
       {
+        email: 'liliana.soukayem@cbunited.com',
+        agentFirstName: 'Liliana',
+        agentLastName: 'Soukayem',
         agentFullName: 'Liliana	Soukayem',
         phone: '1 (915) 727-6724',
-        email: 'liliana.soukayem@cbunited.com',
-        areas: '-',
-        zipCodes: '77044, 7736',
         externalID: '98506539',
-        isMatching: '✓'
+        isMatching: '✓',
+        referralsSent: '20',
+        referralsRespondedTo: '2',
+        referralsWon: '1',
+        responseTime: '1m 5s',
+        areas: '-',
+        numZipsCovered: '2',
+        zipCodes: '77044, 7736'
       },
       {
+        email: 'kirk.craig@cbunited.com',
+        agentFirstName: 'Kirk',
+        agentLastName: 'Craig',
         agentFullName: 'Kirk	Craig',
         phone: '1 (832) 707-3611',
-        email: 'kirk.craig@cbunited.com',
-        areas: '-',
-        zipCodes: '77044, 7736',
         externalID: '98506463',
-        isMatching: '✓'
+        isMatching: '✓',
+        referralsSent: '20',
+        referralsRespondedTo: '2',
+        referralsWon: '1',
+        responseTime: '1m 5s',
+        areas: '-',
+        numZipsCovered: '2',
+        zipCodes: '77044, 7736'
       },
       {
+        email: 'honi.alexander@cbunited.com',
+        agentFirstName: 'Honi',
+        agentLastName: 'Alexander',
         agentFullName: 'Honi	Alexander',
         phone: '1 (281) 725-4710',
-        email: 'honi.alexander@cbunited.com',
-        areas: '-',
-        zipCodes: '77058, 77059, 77062, 77539, 77546, 77565, 77568, 77573, 77581, 77584, 77586',
         externalID: '98506580',
-        isMatching: '✓'
+        isMatching: '✓',
+        referralsSent: '20',
+        referralsRespondedTo: '2',
+        referralsWon: '1',
+        responseTime: '1m 5s',
+        areas: '-',
+        numZipsCovered: '12',
+        zipCodes: '77058, 77059, 77062, 77539, 77546, 77565, 77568, 77573, 77581, 77584, 77586'
       },
       {
+        email: 'donna.williams@cbunited.com',
+        agentFirstName: 'Donna',
+        agentLastName: 'Williams',
         agentFullName: 'Donna Williams',
         phone: '1 (832) 928-6633',
-        email: 'donna.williams@cbunited.com',
-        areas: '-',
-        zipCodes: '77066, 77067, 77068, 77069, 77090, 77316, 77318, 77356, 77373, 77378, 77379, 77380, 77381, 77382, 77384, 77385, 77386, 77388, 77389',
         externalID: '100853624',
-        isMatching: '✓'
+        isMatching: '✓',
+        referralsSent: '20',
+        referralsRespondedTo: '2',
+        referralsWon: '1',
+        responseTime: '1m 5s',
+        areas: '-',
+        numZipsCovered: '22',
+        zipCodes: '77066, 77067, 77068, 77069, 77090, 77316, 77318, 77356, 77373, 77378, 77379, 77380, 77381, 77382, 77384, 77385, 77386, 77388, 77389'
       }
     ]
 
     const columns = [
-    {
-			Header: "Matching",
-			columns: [
-				{
-					Header: "Referrals",
-					accessor: "referrals"
-				},
-        {
-					Header: "Responded",
-					accessor: "referrals"
-				},
-        {
-					Header: "Won",
-					accessor: "referrals"
-				},
-        {
-					Header: "Response Time",
-					accessor: "referrals"
-				}
-			]
-		},
     {
       Header: '',
       id: "checkbox",
@@ -223,21 +317,26 @@ class TabBrokerageAgents extends React.Component {
           />
         );
       },
-      width:'30'
+      width:'30',
+      fixed: 'left'
     }, {
-      Header: 'Agent Name',
-      accessor: 'agentFullName',
-      Cell: ({ row }) => (<Link to={{ pathname: `/admin-agent-detail` }}>{row.agentFullName}</Link>),
-      width:'180'
+      Header: 'Email',
+      accessor: 'email',
+      Cell: ({ row }) => (<Link to={{ pathname: `/admin-agent-detail` }}>{row.email}</Link>),
+      width:'240',
+      fixed: 'left'
+    }, {
+      Header: 'First Name',
+      accessor: 'agentFirstName',
+      width:'100'
+    }, {
+      Header: 'Last Name',
+      accessor: 'agentLastName',
+      width:'100'
     }, {
       Header: 'Phone',
       accessor: 'phone',
       width:'140'
-    }, {
-      Header: 'Email',
-      accessor: 'email',
-      Cell: ({ row }) => (<a href={`mailto:` + row.email}>{row.email}</a>),
-      width:'220'
     }, {
       Header: 'ID',
       accessor: 'externalID',
@@ -247,9 +346,25 @@ class TabBrokerageAgents extends React.Component {
       accessor: 'isMatching',
       width:'80'
     }, {
-      Header: 'Areas',
-      accessor: 'areas',
-      width:'70'
+      Header: "Referrals Sent",
+      accessor: "referralsSent",
+      width:'110'
+    }, {
+      Header: "Responded",
+      accessor: "referralsRespondedTo",
+      width:'104'
+    }, {
+      Header: "Won",
+      accessor: "referralsWon",
+      width:'50'
+    }, {
+      Header: "Response Time",
+      accessor: "responseTime",
+      width:'124'
+    }, {
+      Header: '# Zips',
+      accessor: 'numZipsCovered',
+      width:'60'
     }, {
       Header: 'Zips Covered',
       accessor: 'zipCodes',
@@ -293,7 +408,7 @@ class TabBrokerageAgents extends React.Component {
             </div>
 
             <div>
-              <ReactTable
+              <ReactTableFixedColumns
                 data={data}
                 columns={columns}
               />

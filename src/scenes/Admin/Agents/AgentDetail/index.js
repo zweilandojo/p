@@ -6,10 +6,8 @@ import classnames from 'classnames';
 // Components
 import AdminAppHeader from '../../../../components/AppHeader/AdminAppHeader.js'
 import Breadcrumbs2 from '../../../../components/Breadcrumbs/index2.js'
-import TabBrokerageProfile from './TabBrokerageProfile.js'
-import TabBrokerageAgents from './TabBrokerageAgents.js'
 
-class BrokerageDetail extends React.Component {
+class AgentDetail extends React.Component {
   constructor(props) {
     super(props);
 
@@ -31,16 +29,16 @@ class BrokerageDetail extends React.Component {
       <div className="Admin">
         <AdminAppHeader />
         <Breadcrumbs2
-          parentUrl="/admin-brokerages"
-          parentPage="Brokerages"
-          currentPage="Brokerage ID"
+          parentUrl="/admin-agents"
+          parentPage="Agents"
+          currentPage="Agent ID"
         />
         <div className="Admin-content">
           <div className="Card">
             <div className="Card-content">
               <div className="StatusPage-title ml-0">
-                <div className="StatusPage-titlemain mb-2 mt-0">Brokerage</div>
-                <div className="StatusPage-titlesub">Coldwell Banker United, Realtors</div>
+                <div className="StatusPage-titlemain">Agent</div>
+                <div className="StatusPage-titlesub"></div>
               </div>
               <Nav tabs>
                 <NavItem>
@@ -61,16 +59,8 @@ class BrokerageDetail extends React.Component {
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    className={classnames({ active: this.state.activeTab === '3' })}
-                    onClick={() => { this.toggle('3'); }}
-                  >
-                    Messages
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink
                     className={classnames({ active: this.state.activeTab === '4' })}
-                    onClick={() => { this.toggle('4'); }}
+                    onClick={() => { this.toggle('3'); }}
                   >
                     Actions
                   </NavLink>
@@ -87,30 +77,26 @@ class BrokerageDetail extends React.Component {
 
               <div className="overflow-y-auto">
                 <div className="flex-no-shrink">
+
                   <TabContent activeTab={this.state.activeTab}>
                     <TabPane tabId="1">
                       <Col sm="12">
-                        <TabBrokerageProfile />
+                        <h2>Tab</h2>
                       </Col>
                     </TabPane>
                     <TabPane tabId="2">
                       <Col sm="12">
-                        <TabBrokerageAgents />
+                        <h2>Tab</h2>
                       </Col>
                     </TabPane>
                     <TabPane tabId="3">
                       <Col sm="12">
-                        <h2 className="">Messages</h2>
-                      </Col>
-                    </TabPane>
-                    <TabPane tabId="4">
-                      <Col sm="12">
                         <div className="JsonView">
-                          <h4>Actions</h4>
+                          <h4>HomeFit Contents</h4>
                         </div>
                       </Col>
                     </TabPane>
-                    <TabPane tabId="5">
+                    <TabPane tabId="4">
                       <Col sm="12">
                         <div className="JsonView">
                           <h4>Brokerage Events</h4>
@@ -130,4 +116,4 @@ class BrokerageDetail extends React.Component {
   }
 }
 
-export default BrokerageDetail;
+export default AgentDetail;

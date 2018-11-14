@@ -41,9 +41,9 @@ class AdminCustomers extends React.Component {
             <div className="Card">
               <div className="Card-content">
                 <div className="no-shrink">
-                  <h1>Customers / Agents</h1>
-                  <div class="input-group mb-5 max-w-xs">
-                    <input type="text" class="form-control" placeholder="Search by phone # or ID" value="" />
+                  <h1 className="">Customers / Agents</h1>
+                  <div class="input-group mb-4 max-w-sm">
+                    <input type="text" class="form-control" placeholder="Search by Name, Phone or ID" value="" />
                     <div class="input-group-append">
                       <button class="btn btn-primary" type="button">Search</button>
                     </div>
