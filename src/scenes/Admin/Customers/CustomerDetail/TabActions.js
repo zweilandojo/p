@@ -64,9 +64,9 @@ const TabActions = () => (
           </div>
         </div>
 
-        {/* Action: Spam / Toxic user */}
-        <div className="card mb-8" id="FormSpamUser">
-          <h5 className="card-header">Spam / Toxic User</h5>
+        {/* Action: Block User */}
+        <div className="card mb-8" id="FormBlockUser">
+          <h5 className="card-header">Block User</h5>
           <div className="card-body">
             <p>Mark this customer as spam / toxic.</p>
             <p>This will unsubscribe them and prevent future messages from generating classification tasks for AITs.</p>
@@ -105,7 +105,7 @@ const TabActions = () => (
             <Link to="/admin-customers-detail#FormAssignAgent" className="nav-link p-0">Assign Agent</Link>
           </li>
           <li className="nav-item">
-            <Link to="/admin-customers-detail#FormSpamUser" className="nav-link p-0">Spam User</Link>
+            <Link to="/admin-customers-detail#FormBlockUser" className="nav-link p-0">Block User</Link>
           </li>
           <li className="nav-item">
             <Link to="/admin-customers-detail#FormManageSubscription" className="nav-link p-0">Unsubscribe</Link>
