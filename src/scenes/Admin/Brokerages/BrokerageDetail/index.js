@@ -100,7 +100,13 @@ class BrokerageDetail extends React.Component {
                     </TabPane>
                     <TabPane tabId="3">
                       <Col sm="12">
-                        <h2 className="">Messages</h2>
+                        <div className="overflow-y-auto">
+                          <div className="flex-no-shrink">
+                            <div className="JsonView flex flex-wrap">
+                              <h2 className="">Messages</h2>
+                            </div>
+                          </div>
+                        </div>
                       </Col>
                     </TabPane>
                     <TabPane tabId="4">

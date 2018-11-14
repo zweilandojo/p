@@ -335,9 +335,9 @@ class AdminAgents extends React.Component {
       accessor: 'metro',
       width:'100'
     }, {
-      Header: '# Zips Covered',
+      Header: '# Zips',
       accessor: 'numZipsCovered',
-      width:'116'
+      width:'60'
     }, {
       Header: 'Zips',
       accessor: 'zipCodes',
