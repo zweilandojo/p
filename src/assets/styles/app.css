@@ -829,6 +829,36 @@ textarea {
   padding-bottom: 0;
 }
 
+.ContextView-tabs .nav-tabs {
+  border-bottom: 0;
+  display: flex;
+  width: 100%;
+}
+.ContextView-tabs .nav-tabs .nav-item {
+  margin-bottom: 0;
+}
+.ContextView-tabs .nav-link {
+  padding: 0;
+  color: inherit;
+  border-radius: 0;
+  border: inherit;
+  border-bottom: 3px solid white;
+  padding: 10px 15px;
+  width: 100%;
+  text-align: center;
+}
+.ContextView-tabs .nav-link:hover {
+  border-bottom: 3px solid white
+}
+.ContextView-tabs .nav-tabs .nav-link.active,
+.ContextView-tabs .nav-tabs .nav-item.show .nav-link {
+  color: #333;
+  border-bottom-color: #24b6dc;
+}
+.nav-tabs .ContextView-tab {
+  padding: 0;
+  border-bottom: 0;
+}
 
 /* Json View */
 .JsonView {

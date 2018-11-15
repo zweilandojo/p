@@ -1,5 +1,7 @@
-import React from 'react';
-import { } from 'react-router-dom';
+import React from 'react'
+import { } from 'react-router-dom'
+import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col } from 'reactstrap'
+import classnames from 'classnames'
 
 // Imports
 import ContextMessages from './ContextMessages.js'
@@ -11,6 +13,23 @@ let flexShrink = {
 }
 
 class ContextView extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      activeTab: '1'
+    };
+  }
+
+  toggle(tab) {
+    if (this.state.activeTab !== tab) {
+      this.setState({
+        activeTab: tab
+      });
+    }
+  }
+
   render() {
     return (
       <div className="ContextView flex-shrink" style={flexShrink}>
@@ -26,17 +45,53 @@ class ContextView extends React.Component {
             </span>
           </div>
         </div>
+
+
         <div className="ContextView-tabs">
+          <Nav tabs>
+            <NavItem className="ContextView-tab">
+              <NavLink
+                className={classnames({ active: this.state.activeTab === '1' })}
+                onClick={() => { this.toggle('1'); }}
+              >
+                Conversation
+              </NavLink>
+            </NavItem>
+            <NavItem className="ContextView-tab">
+              <NavLink
+                className={classnames({ active: this.state.activeTab === '2' })}
+                onClick={() => { this.toggle('2'); }}
+              >
+                About
+              </NavLink>
+            </NavItem>
+            <NavItem className="ContextView-tab">
+              <NavLink
+                className={classnames({ active: this.state.activeTab === '3' })}
+                onClick={() => { this.toggle('3'); }}
+              >
+                Missions
+              </NavLink>
+            </NavItem>
+          </Nav>
+          {/*
           <div className="ContextView-tab ">Conversation</div>
           <div className="ContextView-tab ">About</div>
           <div className="ContextView-tab isActive">Missions</div>
+          */}
         </div>
         <div className="ContextView-content">
-
-          {/* <ContextMessages /> */}
-          {/* <ContextAbout /> */}
-          <ContextMissions />
-
+          <TabContent activeTab={this.state.activeTab}>
+            <TabPane tabId="1">
+              <ContextMessages />
+            </TabPane>
+            <TabPane tabId="2">
+              <ContextAbout />
+            </TabPane>
+            <TabPane tabId="3">
+              <ContextMissions />
+            </TabPane>
+          </TabContent>
         </div>
       </div>
     )
