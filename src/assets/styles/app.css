@@ -72,6 +72,19 @@ body {
   line-height: 1.5;
 }
 
+
+/* ----------------------------------------
+:: Colors
+---------------------------------------- */
+.text-black { color: #333; }
+.text-grey { color: #999; }
+.text-grey-dark { color: #6C757D; }
+
+.bg-grey-light { background-color: #e4e4e4; }
+.bg-grey-lighter { background-color: #e9ecef; }
+.bg-grey-lightest { background-color: #f8f9fa; }
+
+
 /* ----------------------------------------
 :: Layout
 ---------------------------------------- */
@@ -789,6 +802,14 @@ textarea {
 .ContextView-MessageView-content {
   word-wrap: break-word;
 }
+.ContextView-MessageView-Header-name {
+  margin-right: 10px;
+}
+.ContextView-MessageView-Header-MessageTime {
+  color: #999;
+  font-weight: 300;
+  font-family: 'SofiaProSoftLight';
+}
 .ContextView-factgroup {
   display: flex;
   flex-wrap: wrap;
@@ -862,8 +883,8 @@ textarea {
 
 /* Json View */
 .JsonView {
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
   overflow: auto;
 }
 

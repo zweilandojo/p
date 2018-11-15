@@ -31,6 +31,25 @@ class ContextAbout extends React.Component {
             <a href="/#/admin/brokerages/cb54c0a7-2eb2-4e96-bd61-7a838f452d74" target="_blank">Better Homes and Gardens Metro Brokers</a>
           </div>
         </div>
+        <div className="ContextView-factgroup">
+          <h4>Agent Referrals</h4>
+          <div className="ContextView-fact">
+            <span>Sent</span>
+            <span>3</span>
+          </div>
+          <div className="ContextView-fact">
+            <span>Responded</span>
+            <span>3 (100%)</span>
+          </div>
+          <div className="ContextView-fact">
+            <span>Won</span>
+            <span>1 (33%)</span>
+          </div>
+          <div className="ContextView-fact">
+            <span>Avg Response</span>
+            <span>1m 25s</span>
+          </div>
+        </div>
       </div>
     )
   }

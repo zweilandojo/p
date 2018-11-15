@@ -104,7 +104,7 @@ const TabBrokerageProfile = () => (
     "revision": "98498645",
     "profileType": "real-estate-brokerage"
     }
-            `}
+              `}
             </pre>
           </div>
 

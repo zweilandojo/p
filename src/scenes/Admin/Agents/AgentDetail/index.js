@@ -1,11 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { } from 'react-router-dom';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
 
 // Components
 import AdminAppHeader from '../../../../components/AppHeader/AdminAppHeader.js'
 import Breadcrumbs2 from '../../../../components/Breadcrumbs/index2.js'
+import ContextView from '../../../../components/ContextView/index.js'
+import TabAgentProfile from './TabAgentProfile.js'
+import TabAgentActions from './TabAgentActions.js'
+import TabAgentEvents from './TabAgentEvents.js'
 
 class AgentDetail extends React.Component {
   constructor(props) {
@@ -31,15 +35,12 @@ class AgentDetail extends React.Component {
         <Breadcrumbs2
           parentUrl="/admin-agents"
           parentPage="Agents"
-          currentPage="Agent ID"
+          currentPage="Agents"
         />
         <div className="Admin-content">
-          <div className="Card">
+          <ContextView />
+          <div className="Card ml-5">
             <div className="Card-content">
-              <div className="StatusPage-title ml-0">
-                <div className="StatusPage-titlemain">Agent</div>
-                <div className="StatusPage-titlesub"></div>
-              </div>
               <Nav tabs>
                 <NavItem>
                   <NavLink
@@ -54,21 +55,13 @@ class AgentDetail extends React.Component {
                     className={classnames({ active: this.state.activeTab === '2' })}
                     onClick={() => { this.toggle('2'); }}
                   >
-                    Agent
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink
-                    className={classnames({ active: this.state.activeTab === '4' })}
-                    onClick={() => { this.toggle('3'); }}
-                  >
                     Actions
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    className={classnames({ active: this.state.activeTab === '5' })}
-                    onClick={() => { this.toggle('5'); }}
+                    className={classnames({ active: this.state.activeTab === '3' })}
+                    onClick={() => { this.toggle('3'); }}
                   >
                     Events
                   </NavLink>
@@ -80,29 +73,13 @@ class AgentDetail extends React.Component {
 
                   <TabContent activeTab={this.state.activeTab}>
                     <TabPane tabId="1">
-                      <Col sm="12">
-                        <h2>Tab</h2>
-                      </Col>
+                      <TabAgentProfile />
                     </TabPane>
                     <TabPane tabId="2">
-                      <Col sm="12">
-                        <h2>Tab</h2>
-                      </Col>
+                      <TabAgentActions />
                     </TabPane>
                     <TabPane tabId="3">
-                      <Col sm="12">
-                        <div className="JsonView">
-                          <h4>HomeFit Contents</h4>
-                        </div>
-                      </Col>
-                    </TabPane>
-                    <TabPane tabId="4">
-                      <Col sm="12">
-                        <div className="JsonView">
-                          <h4>Brokerage Events</h4>
-                          <p className="">This table lists all events tracked by CPS: Messages, profile updates, tags, etc.</p>
-                        </div>
-                      </Col>
+                      <TabAgentEvents />
                     </TabPane>
                   </TabContent>
                 </div>

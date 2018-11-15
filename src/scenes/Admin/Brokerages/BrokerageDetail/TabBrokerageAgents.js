@@ -342,25 +342,25 @@ class TabBrokerageAgents extends React.Component {
       accessor: 'externalID',
       width:'90'
     }, {
-      Header: 'Matching',
+      Header: 'HHH',
       accessor: 'isMatching',
-      width:'80'
+      width:'48'
     }, {
       Header: "Referrals Sent",
       accessor: "referralsSent",
-      width:'110'
+      width:'108'
     }, {
       Header: "Responded",
       accessor: "referralsRespondedTo",
-      width:'104'
+      width:'91'
     }, {
       Header: "Won",
       accessor: "referralsWon",
-      width:'50'
+      width:'46'
     }, {
       Header: "Response Time",
       accessor: "responseTime",
-      width:'124'
+      width:'115'
     }, {
       Header: '# Zips',
       accessor: 'numZipsCovered',
@@ -375,16 +375,6 @@ class TabBrokerageAgents extends React.Component {
       <div className="overflow-y-auto">
         <div className="flex-no-shrink">
           <div className="JsonView">
-            <header className="">
-              <div className="">
-                <h2>
-                  Agents
-                  <span className="text-grey-dark text-xl ml-2">(34 total)</span>
-                </h2>
-                <p>Agents assigned to this brokerage</p>
-              </div>
-            </header>
-
             <div className="mb-2 flex justify-between">
               <div className="input-group mb-4 max-w-sm">
                 <input
@@ -397,6 +387,7 @@ class TabBrokerageAgents extends React.Component {
                 </div>
               </div>
               <div className="inline-block float-right">
+                <span className="text-grey mr-4">34 Agents</span>
                 <a
                   href="https://docs.google.com/spreadsheets/d/1WRvLjNYWYmVXIGwrLmOmT_4yC1VFPeHgV8llOoNro0M/edit#gid=0"
                   target="_blank"

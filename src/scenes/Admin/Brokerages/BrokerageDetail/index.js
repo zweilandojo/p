@@ -89,40 +89,30 @@ class BrokerageDetail extends React.Component {
                 <div className="flex-no-shrink">
                   <TabContent activeTab={this.state.activeTab}>
                     <TabPane tabId="1">
-                      <Col sm="12">
-                        <TabBrokerageProfile />
-                      </Col>
+                      <TabBrokerageProfile />
                     </TabPane>
                     <TabPane tabId="2">
-                      <Col sm="12">
-                        <TabBrokerageAgents />
-                      </Col>
+                      <TabBrokerageAgents />
                     </TabPane>
                     <TabPane tabId="3">
-                      <Col sm="12">
-                        <div className="overflow-y-auto">
-                          <div className="flex-no-shrink">
-                            <div className="JsonView flex flex-wrap">
-                              <h2 className="">Messages</h2>
-                            </div>
+                      <div className="overflow-y-auto">
+                        <div className="flex-no-shrink">
+                          <div className="JsonView flex flex-wrap">
+                            <h2 className="">Messages</h2>
                           </div>
                         </div>
-                      </Col>
+                      </div>
                     </TabPane>
                     <TabPane tabId="4">
-                      <Col sm="12">
-                        <div className="JsonView">
-                          <h4>Actions</h4>
-                        </div>
-                      </Col>
+                      <div className="JsonView">
+                        <h4>Actions</h4>
+                      </div>
                     </TabPane>
                     <TabPane tabId="5">
-                      <Col sm="12">
-                        <div className="JsonView">
-                          <h4>Brokerage Events</h4>
-                          <p className="">This table lists all events tracked by CPS: Messages, profile updates, tags, etc.</p>
-                        </div>
-                      </Col>
+                      <div className="JsonView">
+                        <h4>Brokerage Events</h4>
+                        <p className="">This table lists all events tracked by CPS: Messages, profile updates, tags, etc.</p>
+                      </div>
                     </TabPane>
                   </TabContent>
                 </div>

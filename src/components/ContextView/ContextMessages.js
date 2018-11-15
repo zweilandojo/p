@@ -16,8 +16,8 @@ class ContextMessages extends React.Component {
             </div>
             <div className="ContextView-Message-Incoming">
               <div className="ContextView-MessageView-Header">
-                <div className="ContextView-MessageView-Header-name">User</div>
-                <div className="ContextView-MessageView-Header-MessageTime">Nov 6th, 8:37 am</div>
+                <div className="ContextView-MessageView-Header-name mr-2">User</div>
+                <div className="ContextView-MessageView-Header-MessageTime text-grey">Nov 6th, 8:37 am</div>
               </div>
             </div>
             <div className="ContextView-MessageView-content">Hello Jane</div>
@@ -77,7 +77,7 @@ class ContextMessages extends React.Component {
           </li>
 
         </ul>
-        <div className="input-group no-shrink p-4">
+        <div className="input-group no-shrink p-2">
           <input type="text" className="form-control" value="" />
           <div className="input-group-append">
             <button className="btn btn-primary" tabindex="-1">Send message</button>
