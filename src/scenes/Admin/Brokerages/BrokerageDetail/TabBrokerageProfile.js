@@ -5,27 +5,8 @@ const TabBrokerageProfile = () => (
   <div className="overflow-y-auto">
     <div className="flex-no-shrink">
       <div className="JsonView flex flex-wrap">
-        <div className="flex w-full mb-12 border-b border-color-lighter pb-8">
-          <div className="w-1/4">
-            <h4 className="text-base">Market</h4>
-            <p className="text-3xl">Houston, TX</p>
-          </div>
-          <div className="w-1/4">
-            <h4 className="text-base">Agents</h4>
-            <p className="text-3xl">34 <span className="text-grey-dark text-base">/ 34 Enabled (100%)</span></p>
-          </div>
-          <div className="w-1/4">
-            <h4 className="text-base">Zip Codes</h4>
-            <p className="text-3xl">21 <span className="text-grey-dark text-base">/ 90% Covered</span></p>
-          </div>
-          <div className="w-1/4">
-            <h4 className="text-base">Referrals Offered</h4>
-            <p className="text-3xl">89 Awarded <span className="text-grey-dark text-base">/ 109 (82%)</span></p>
-          </div>
-        </div>
-
-        <div className="w-1/2">
-          <h4 className="text-2xl mb-4">All Details</h4>
+        <div className="w-2/3">
+          <h4 className="text-xl mb-3">All Details</h4>
           <pre>
           {`
   {
@@ -108,11 +89,49 @@ const TabBrokerageProfile = () => (
             </pre>
           </div>
 
-        <div className="w-1/2 px-8">
+        <div className="w-1/3 px-8">
+
+          <div className="mb-8">
+            <h3 className="mb-3 text-xl">Brokerage Information</h3>
+            <div className="text-sm leading-normal">
+              <div className="flex">
+                <span className="w-1/2 text-grey">
+                  Market
+                </span>
+                <span className="w-1/2">
+                  Houston, TX
+                </span>
+              </div>
+              <div className="flex">
+                <span className="w-1/2 text-grey">
+                  Agents
+                </span>
+                <span className="w-1/2 truncate">
+                  34
+                </span>
+              </div>
+              <div className="flex">
+                <span className="w-1/2 text-grey">
+                  Zip Codes
+                </span>
+                <span className="w-1/2">
+                  21
+                </span>
+              </div>
+              <div className="flex">
+                <span className="w-1/2 text-grey">
+                  Referrals Offered
+                </span>
+                <span className="w-1/2">
+                  89
+                </span>
+              </div>
+            </div>
+          </div>
 
           <div className="mb-4">
-            <h4 className="text-2xl mb-4">Area Coverage</h4>
-            <table className="table text-base">
+            <h4 className="text-xl mb-4">Area Coverage</h4>
+            <table className="table text-sm">
               <thead>
                 <tr>
                   <th>Zip Code</th>

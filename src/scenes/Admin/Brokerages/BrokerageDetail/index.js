@@ -8,6 +8,7 @@ import AdminAppHeader from '../../../../components/AppHeader/AdminAppHeader.js'
 import Breadcrumbs2 from '../../../../components/Breadcrumbs/index2.js'
 import TabBrokerageProfile from './TabBrokerageProfile.js'
 import TabBrokerageAgents from './TabBrokerageAgents.js'
+import ContextViewBrokerage from '../../../../components/ContextViewBrokerage/index.js'
 
 class BrokerageDetail extends React.Component {
   constructor(props) {
@@ -36,7 +37,9 @@ class BrokerageDetail extends React.Component {
           currentPage="Brokerage ID"
         />
         <div className="Admin-content">
-          <div className="Card">
+          <ContextViewBrokerage />
+
+          <div className="Card ml-5">
             <div className="Card-content">
               <div className="StatusPage-title ml-0">
                 <div className="StatusPage-titlemain mb-2 mt-0">Brokerage</div>
@@ -56,15 +59,7 @@ class BrokerageDetail extends React.Component {
                     className={classnames({ active: this.state.activeTab === '2' })}
                     onClick={() => { this.toggle('2'); }}
                   >
-                    Agent
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink
-                    className={classnames({ active: this.state.activeTab === '3' })}
-                    onClick={() => { this.toggle('3'); }}
-                  >
-                    Messages
+                    Agents
                   </NavLink>
                 </NavItem>
                 <NavItem>

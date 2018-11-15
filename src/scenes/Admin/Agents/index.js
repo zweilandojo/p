@@ -438,6 +438,7 @@ class AdminAgents extends React.Component {
         <Breadcrumbs currentPage="Agents" />
         <div className="Admin-inner">
           <div className="Admin-content">
+
             <div className="Card">
               <div className="Card-content">
                 <div className="no-shrink">

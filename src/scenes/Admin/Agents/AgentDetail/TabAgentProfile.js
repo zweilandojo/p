@@ -98,29 +98,29 @@ class TabAgentProfile extends React.Component {
           </div>
           <div className="w-1/3 pl-8 pr-2">
             <div className="mb-8">
-              <h3 className="mb-4">Profile Information</h3>
-              <div className="text-base leading-normal">
+              <h3 className="mb-2 text-xl">Profile Information</h3>
+              <div className="text-sm leading-normal">
                 <div className="flex">
-                  <span className="w-1/3 text-grey">
+                  <span className="w-1/2 text-grey">
                     Phone Number
                   </span>
-                  <span className="w-2/3">
+                  <span className="w-1/2">
                     +16174160943
                   </span>
                 </div>
                 <div className="flex">
-                  <span className="w-1/3 text-grey">
+                  <span className="w-1/2 text-grey">
                     Email Address
                   </span>
-                  <span className="w-2/3 truncate">
+                  <span className="w-1/2 truncate">
                     matt.colaneri@nemoves.com
                   </span>
                 </div>
                 <div className="flex">
-                  <span className="w-1/3 text-grey">
+                  <span className="w-1/2 text-grey">
                     Agent Type
                   </span>
-                  <span className="w-2/3">
+                  <span className="w-1/2">
                     Listing
                   </span>
                 </div>
@@ -128,39 +128,37 @@ class TabAgentProfile extends React.Component {
             </div>
             <hr />
             <div className="my-8">
-              <h3 className="mb-4">Referrals</h3>
-              <div className="text-base leading-normal">
+              <h3 className="mb-2 text-xl">Referrals</h3>
+              <div className="text-sm leading-normal">
                 <div className="flex">
-                  <span className="w-1/3 text-grey">
+                  <span className="w-1/2 text-grey">
                     Sent
                   </span>
-                  <span className="w-2/3">
+                  <span className="w-1/2">
                     20
                   </span>
                 </div>
                 <div className="flex">
-                  <span className="w-1/3 text-grey">
+                  <span className="w-1/2 text-grey">
                     Responded
                   </span>
-                  <span className="w-2/3">
+                  <span className="w-1/2">
                     3
-                    <span className="text-grey ml-2">15%</span>
                   </span>
                 </div>
                 <div className="flex">
-                  <span className="w-1/3 text-grey">
+                  <span className="w-1/2 text-grey">
                     Won
                   </span>
-                  <span className="w-2/3">
+                  <span className="w-1/2">
                     1
-                    <span className="text-grey ml-2">1%</span>
                   </span>
                 </div>
                 <div className="flex">
-                  <span className="w-1/3 text-grey">
+                  <span className="w-1/2 text-grey">
                     Response
                   </span>
-                  <span className="w-2/3">
+                  <span className="w-1/2">
                     1m 5s
                   </span>
                 </div>
@@ -168,13 +166,13 @@ class TabAgentProfile extends React.Component {
             </div>
             <hr />
             <div className="my-8">
-              <h3 className="mb-4">Areas / Zips</h3>
-              <div className="text-base leading-normal">
+              <h3 className="mb-2 text-xl">Areas / Zips</h3>
+              <div className="text-sm leading-normal">
                 <div className="flex">
-                  <span className="w-1/3 text-grey">
+                  <span className="w-1/2 text-grey">
                     # of Zip Codes
                   </span>
-                  <span className="w-2/3">
+                  <span className="w-1/2">
                     25
                   </span>
                 </div>
