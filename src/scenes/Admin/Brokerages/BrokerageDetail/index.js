@@ -39,7 +39,7 @@ class BrokerageDetail extends React.Component {
         <div className="Admin-content">
           <ContextViewBrokerage />
 
-          <div className="Card ml-5">
+          <div className="Card ml-4">
             <div className="Card-content">
               <div className="StatusPage-title ml-0">
                 <div className="StatusPage-titlemain mb-2 mt-0">Brokerage</div>
